@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
@@ -79,6 +80,8 @@ To learn more about React Native, take a look at the following resources:
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
 =======
+=======
+>>>>>>> 2f4fec9b348bec472415ae943c6c81a555047a2d
 🤖 AI Chatbot using DeepSeek R1 (1.5B) with RAG
 
 This project is an AI-powered chatbot application using the **DeepSeek R1 1.5B model** with **Retrieval-Augmented Generation (RAG)**. It allows users to chat with a locally hosted LLM, with support for custom knowledge base retrieval using **MongoDB** and a clean **React Native** frontend. The backend is built using **Node.js** and **Express.js**.
@@ -223,4 +226,7 @@ Pull requests are welcome. For major changes, please open an issue first.
 📜 License
 
 [MIT License](LICENSE)
+<<<<<<< HEAD
+>>>>>>> 2f4fec9b348bec472415ae943c6c81a555047a2d
+=======
 >>>>>>> 2f4fec9b348bec472415ae943c6c81a555047a2d
