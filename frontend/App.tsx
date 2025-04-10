@@ -5,113 +5,183 @@
  * @format
  */
 
-import React from 'react';
-import type {PropsWithChildren} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+import React, {useState} from 'react';
+import { Provider as PaperProvider, Text, Appbar, TextInput, IconButton} from 'react-native-paper';
+import { ScrollView, StyleSheet, View, ImageBackground, TouchableOpacity } from 'react-native';
+import Logo from './assets/svg/message4.svg'
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
 
-type SectionProps = PropsWithChildren<{
-  title: string;
-}>;
+const messages = [
+  { mstype: "bot", msg: "Hello! How can I help you?" },
+  { mstype: "user", msg: "Hi, tell me about your services." },
+  { mstype: "bot", msg: "Sure! We offer 24/7 support and free delivery." },
+  { mstype: "user", msg: "Great! How do I place an order?" },
+  { mstype: "bot", msg: "You can order through our app or website." },
 
-function Section({children, title}: SectionProps): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
+  { mstype: "user", msg: "Can I track my order?" },
+  { mstype: "bot", msg: "Yes! You can track your order in the 'My Orders' section." },
+
+  { mstype: "user", msg: "Do you support cash on delivery?" },
+  { mstype: "bot", msg: "Yes, we support cash on delivery in select areas." },
+
+  { mstype: "user", msg: "How long will it take to deliver?" },
+  { mstype: "bot", msg: "Most orders are delivered within 2–3 working days." },
+
+  { mstype: "user", msg: "Is there a return policy?" },
+  { mstype: "bot", msg: "Yes, you can return products within 7 days of delivery." },
+
+  { mstype: "user", msg: "Thank you, that's helpful!" },
+  { mstype: "bot", msg: "You're welcome! Let me know if you have more questions." },
+
+  { mstype: "user", msg: "Do you have any discounts today?" },
+  { mstype: "bot", msg: "Yes! Use code WELCOME10 to get 10% off your first order." },
+
+  { mstype: "user", msg: "Cool, I'll try it now!" },
+  { mstype: "bot", msg: "Awesome! Have a great shopping experience 😊" },
+];
+
+
+function App() {
+  const [inputText, setInputText] = useState('');
+
+  const [umsg, setUmsg] = useState([
+    { mstype: "bot", msg: "Hello! 👋 How can I help you?", time: "06:30pm" },
+    { mstype: "user", msg: "Hi, tell me about your services. 📦", time: "06:30pm" },
+    { mstype: "bot", msg: "Sure! ✅ We offer 24/7 support 🕒 and fast delivery 🚚.", time: "06:31pm" },
+    { mstype: "user", msg: "Do you have any discounts? 💸", time: "06:32pm" },
+    { mstype: "bot", msg: "Yes! 🎉 Use code WELCOME10 to get 10% off. 🛍️", time: "06:32pm" },
+    { mstype: "user", msg: "Nice! 😄 Can I return items? 🔄", time: "06:33pm" },
+    { mstype: "bot", msg: "Yes, returns are accepted within 7 days. ✅📦", time: "06:33pm" },
+
+  ]);
+  
+
+  function formatDate(date) {
+    let hours = date.getHours();
+    const minutes = String(date.getMinutes()).padStart(2, '0');
+    const ampm = hours >= 12 ? 'pm' : 'am';
+    hours = hours % 12 || 12;
+  
+    return `${hours}:${minutes}${ampm}`;
+  }
+  
+  
+  function handleSend() {
+    if (inputText.trim() === '') return;
+  
+    const now = new Date();
+    const formattedTime = formatDate(now);
+  
+    setUmsg([
+      ...umsg,
+      { mstype: "user", msg: inputText, time: formattedTime }
+    ]);
+    setInputText('');
+  }
+  
   return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
-    </View>
-  );
-}
+    <PaperProvider>
+      
+    <ImageBackground
+      source={require('./assets/svg/back.webp')} // 🖼️ your background image here
+      style={styles.background}
+      resizeMode="cover"
+    >
 
-function App(): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
-  return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
+<Appbar.Header style={{marginTop:10,backgroundColor:"transparent" }}>
+        <View style={{marginLeft:10, marginRight:10}}>
+        <Logo width={50} height={50} />
         </View>
+      <Appbar.Content title="Shoping Chatbot" color='white' titleStyle={{fontFamily:'monospace', fontWeight:700}}/>
+      <Appbar.Action icon="account-circle"  iconColor='white' size={40}/>
+    </Appbar.Header>
+
+      <ScrollView contentContainerStyle={styles.container}>
+        {umsg.map((item, index) => (
+          <View
+            key={index}
+            style={[
+              styles.messageContainer,
+              item.mstype === 'user' ? styles.userMessage : styles.botMessage,
+            ]}
+          >
+            <Text style={styles.messageText}>{item.msg}</Text>
+            <Text style={{color:"#C6C6C6", fontSize:12}}>{item.time}</Text>
+
+          </View>
+        ))}
       </ScrollView>
-    </SafeAreaView>
+
+      <View style={styles.inputContainer}>
+      <TextInput
+        value={inputText}
+        onChangeText={setInputText}
+        placeholder="Type your message..."
+        mode="outlined"
+        style={styles.input}
+        outlineColor="gray"
+        activeOutlineColor="#50514F"
+        outlineStyle={{borderRadius:50, backgroundColor:"#50514F"}}
+        textColor='white'
+        placeholderTextColor={"white"}
+        cursorColor='white'
+        right={<TextInput.Icon icon="send" onPress={handleSend}/>}
+        left={<TextInput.Icon icon="attachment"/>}
+      />
+      </View>
+
+    </ImageBackground>
+  </PaperProvider>
+    
   );
 }
+
 
 const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
+  background: {
+    flex: 1,
   },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
+  container: {
+    padding: 10,
+    paddingBottom: 30,
   },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
+  messageContainer: {
+    marginVertical: 5,
+    padding: 10,
+    maxWidth: '80%',
   },
-  highlight: {
-    fontWeight: '700',
+  userMessage: {
+    alignSelf: 'flex-end',
+    backgroundColor: '#006D18',
+    borderTopLeftRadius:10,
+    borderBottomLeftRadius:10,
+    borderBottomRightRadius:10
+  },
+  botMessage: {
+    alignSelf: 'flex-start',
+    backgroundColor: '#1C4B6D',
+    borderTopRightRadius:10,
+    borderBottomLeftRadius:10,
+    borderBottomRightRadius:10
+  },
+  messageText: {
+    color:"white",
+    fontSize: 16,
+  },
+
+  inputContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingBottom:5,
+
+    backgroundColor: 'transparent',
+
+  },
+  input: {
+    flex: 1,
+    marginRight: 5,
+    backgroundColor: 'white',
+    
   },
 });
 
