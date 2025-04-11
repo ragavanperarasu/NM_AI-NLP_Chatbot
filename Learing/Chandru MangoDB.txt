@@ -1,0 +1,143 @@
+show dbs
+admin   40.00 KiB
+config  12.00 KiB
+local   40.00 KiB
+use shop
+switched to db shop
+db.products.insertOne({name:"Max",age:20})
+{
+  acknowledged: true,
+  insertedId: ObjectId('67f78735fd39283d6ee4cdd4')
+}
+db.products.find()
+{
+  _id: ObjectId('67f78735fd39283d6ee4cdd4'),
+  name: 'Max',
+  age: 20
+}
+db.products.find().pretty()
+{
+  _id: ObjectId('67f78735fd39283d6ee4cdd4'),
+  name: 'Max',
+  age: 20
+}
+db.products.insertOne({Name:Chandru,age:20,Dept:cse})
+ReferenceError: Chandru is not defined
+db.products.insertOne({Name:"Chandru",age:20,Dept:"cse"})
+{
+  acknowledged: true,
+  insertedId: ObjectId('67f7889dfd39283d6ee4cdd5')
+}
+db.products.find().pretty()
+{
+  _id: ObjectId('67f78735fd39283d6ee4cdd4'),
+  name: 'Max',
+  age: 20
+}
+{
+  _id: ObjectId('67f7889dfd39283d6ee4cdd5'),
+  Name: 'Chandru',
+  age: 20,
+  Dept: 'cse'
+}
+db.products.insertOne({Name:"Computer",price:1229.99,Description:"it is a high quality computer",Details:{cpu:"Intel i7 8770",Memory:32}})
+{
+  acknowledged: true,
+  insertedId: ObjectId('67f789b8fd39283d6ee4cdd6')
+}
+db.products.find().pretty()
+{
+  _id: ObjectId('67f78735fd39283d6ee4cdd4'),
+  name: 'Max',
+  age: 20
+}
+{
+  _id: ObjectId('67f7889dfd39283d6ee4cdd5'),
+  Name: 'Chandru',
+  age: 20,
+  Dept: 'cse'
+}
+{
+  _id: ObjectId('67f789b8fd39283d6ee4cdd6'),
+  Name: 'Computer',
+  price: 1229.99,
+  Description: 'it is a high quality computer',
+  Details: {
+    cpu: 'Intel i7 8770',
+    Memory: 32
+  }
+}
+show dbs
+admin   40.00 KiB
+config  72.00 KiB
+local   40.00 KiB
+shop    72.00 KiB
+use flights
+switched to db flights
+show dbs
+admin   40.00 KiB
+config  72.00 KiB
+local   40.00 KiB
+shop    72.00 KiB
+db.flightData.insertOne({
+        "DepatureAirport":"MUC",
+        "arrivalAirport":"SFO",
+        "aircraft":"Airbus A380",
+        "distance":12000,
+        "intercontinal":true
+    })
+{
+  acknowledged: true,
+  insertedId: ObjectId('67f79791fd39283d6ee4cdd7')
+}
+db.flightData.finds().pretty()
+TypeError: db.flightData.finds is not a function
+db.flightData.find().pretty()
+{
+  _id: ObjectId('67f79791fd39283d6ee4cdd7'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+flights
+
+db.flightData.insertOne({DepatureAirport:"TXL",arrivalAirport:"LHR",})
+{
+  acknowledged: true,
+  insertedId: ObjectId('67f79a5ffd39283d6ee4cdd8')
+}
+db.flightData.find().pretty()
+{
+  _id: ObjectId('67f79791fd39283d6ee4cdd7'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: ObjectId('67f79a5ffd39283d6ee4cdd8'),
+  DepatureAirport: 'TXL',
+  arrivalAirport: 'LHR'
+}
+db.flightData.insertOne({DepatureAirport:"TXL",arrivalAirport:"LHR",_id:"txl-1hr-1"})
+{
+  acknowledged: true,
+  insertedId: 'txl-1hr-1'
+}
+db.flightData.find().pretty()
+{
+  _id: ObjectId('67f79791fd39283d6ee4cdd7'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: ObjectId('67f79a5ffd39283d6ee4cdd8'),
+  DepatureAirport: 'TXL',
+  arrivalAirport: 'LHR'
+}
