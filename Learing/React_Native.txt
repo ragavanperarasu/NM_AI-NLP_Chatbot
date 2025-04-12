@@ -1,0 +1,74 @@
+To create a **Bare React Native project**, you can use the **React Native CLI** (not Expo). Here's a clean and simple guide:
+
+---
+
+### ✅ Prerequisites
+
+Make sure you have installed:
+
+- **Node.js**
+- **npm** or **yarn**
+- **Java Development Kit (JDK)** – for Android
+- **Android Studio** – for emulator
+- **Xcode** – for iOS (on macOS only)
+- **Watchman** (recommended for macOS)
+
+Install the CLI globally:
+
+```bash
+npm install -g react-native-cli
+```
+
+---
+
+### 🛠 Create Bare React Native Project
+
+```bash
+npx @react-native-community/cli init MyBareApp
+```
+
+> Replace `MyBareApp` with your desired project name.
+
+This creates a **bare-bones React Native project** with native Android and iOS folders.
+
+---
+
+### 🚀 Run the app
+
+#### On Android:
+
+```bash
+cd MyBareApp
+npx react-native run-android
+```
+
+> Make sure your Android emulator or device is running.
+
+#### On iOS (macOS only):
+
+```bash
+npx react-native run-ios
+```
+
+> Requires Xcode installed.
+
+---
+
+### 📁 Folder Structure
+
+- `android/` – native Android project
+- `ios/` – native iOS project
+- `App.js` – entry JavaScript file
+- `node_modules/` – installed packages
+
+---
+
+### 🎨 Optional: Use `react-native-paper` for UI
+
+```bash
+npm install react-native-paper react-native-vector-icons
+```
+
+---
+
+If you want, I can also give you a **custom starter template** with some pre-styled components, screens, and navigation. Just let me know!
