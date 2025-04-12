@@ -141,3 +141,2501 @@ db.flightData.find().pretty()
   DepatureAirport: 'TXL',
   arrivalAirport: 'LHR'
 }
+
+
+==============================================================
+Day 2
+============================================================
+
+show dbs
+admin    40.00 KiB
+config   48.00 KiB
+flights  72.00 KiB
+local    72.00 KiB
+shop     72.00 KiB
+db.flightData.find()
+use flights
+switched to db flights
+db.flightData.find()
+{
+  _id: ObjectId('67f79791fd39283d6ee4cdd7'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: ObjectId('67f79a5ffd39283d6ee4cdd8'),
+  DepatureAirport: 'TXL',
+  arrivalAirport: 'LHR'
+}
+{
+  _id: 'txl-1hr-1',
+  DepatureAirport: 'TXL',
+  arrivalAirport: 'LHR'
+}
+db.flightData.deleteOne({DepatureAirport:"TXL"})
+{
+  acknowledged: true,
+  deletedCount: 1
+}
+db.flightData.find()
+{
+  _id: ObjectId('67f79791fd39283d6ee4cdd7'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: 'txl-1hr-1',
+  DepatureAirport: 'TXL',
+  arrivalAirport: 'LHR'
+}
+db.flightData.deleteMany()
+MongoshInvalidInputError: [COMMON-10001] Missing required argument at position 0 (Collection.deleteMany)
+db.flightData.updateOne({distance:12000},{marker:"delete"})
+MongoInvalidArgumentError: Update document requires atomic operators
+db.flightData.updateOne({distance:12000},{$set: {marker:"delete"}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.flightData.find()
+{
+  _id: ObjectId('67f79791fd39283d6ee4cdd7'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true,
+  marker: 'delete'
+}
+{
+  _id: 'txl-1hr-1',
+  DepatureAirport: 'TXL',
+  arrivalAirport: 'LHR'
+}
+db.flightData.updateMany({},{$set:{marker:"toDelete"}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 2,
+  modifiedCount: 2,
+  upsertedCount: 0
+}
+db.flightData.find()
+{
+  _id: ObjectId('67f79791fd39283d6ee4cdd7'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true,
+  marker: 'toDelete'
+}
+{
+  _id: 'txl-1hr-1',
+  DepatureAirport: 'TXL',
+  arrivalAirport: 'LHR',
+  marker: 'toDelete'
+}
+db.flightData.deleteMany({marker:"toDelete"})
+{
+  acknowledged: true,
+  deletedCount: 2
+}
+db.flightData.find()
+db.flightData([{}])
+TypeError: db.flightData is not a function
+db.flightData([{ {
+        "DepatureAirport":"MUC",
+        "arrivalAirport":"SFO",
+        "aircraft":"Airbus A380",
+        "distance":12000,
+        "intercontinal":true
+    },
+    {
+        "DepatureAirport":"LHR",
+        "arrivalAirport":"TXL",
+        "aircraft":"Airbus A320",
+        "distance":950,
+        "intercontinal":false
+    }}])
+SyntaxError: Unexpected token (1:17)
+
+[0m[31m[1m>[22m[39m[90m 1 |[39m db[33m.[39mflightData([{ {
+ [90m   |[39m                  [31m[1m^[22m[39m
+ [90m 2 |[39m         [32m"DepatureAirport"[39m[33m:[39m[32m"MUC"[39m[33m,[39m
+ [90m 3 |[39m         [32m"arrivalAirport"[39m[33m:[39m[32m"SFO"[39m[33m,[39m
+ [90m 4 |[39m         [32m"aircraft"[39m[33m:[39m[32m"Airbus A380"[39m[33m,[39m[0m
+db.flightData([{
+        "DepatureAirport":"MUC",
+        "arrivalAirport":"SFO",
+        "aircraft":"Airbus A380",
+        "distance":12000,
+        "intercontinal":true
+    },
+    {
+        "DepatureAirport":"LHR",
+        "arrivalAirport":"TXL",
+        "aircraft":"Airbus A320",
+        "distance":950,
+        "intercontinal":false
+    }])
+TypeError: db.flightData is not a function
+db.flightData.insertMany([{$all([{
+        "DepatureAirport":"MUC",
+        "arrivalAirport":"SFO",
+        "aircraft":"Airbus A380",
+        "distance":12000,
+        "intercontinal":true
+    },
+    {
+        "DepatureAirport":"LHR",
+        "arrivalAirport":"TXL",
+        "aircraft":"Airbus A320",
+        "distance":950,
+        "intercontinal":false
+    }])
+SyntaxError: Unexpected token (2:26)
+
+[0m [90m 1 |[39m db[33m.[39mflightData[33m.[39minsertMany([{$all([{
+[31m[1m>[22m[39m[90m 2 |[39m         [32m"DepatureAirport"[39m[33m:[39m[32m"MUC"[39m[33m,[39m
+ [90m   |[39m                           [31m[1m^[22m[39m
+ [90m 3 |[39m         [32m"arrivalAirport"[39m[33m:[39m[32m"SFO"[39m[33m,[39m
+ [90m 4 |[39m         [32m"aircraft"[39m[33m:[39m[32m"Airbus A380"[39m[33m,[39m
+ [90m 5 |[39m         [32m"distance"[39m[33m:[39m[35m12000[39m[33m,[39m[0m
+db.flightData.insertMany([{([{
+        "DepatureAirport":"MUC",
+        "arrivalAirport":"SFO",
+        "aircraft":"Airbus A380",
+        "distance":12000,
+        "intercontinal":true
+    },
+    {
+        "DepatureAirport":"LHR",
+        "arrivalAirport":"TXL",
+        "aircraft":"Airbus A320",
+        "distance":950,
+        "intercontinal":false
+    }])
+SyntaxError: Unexpected token (1:27)
+
+[0m[31m[1m>[22m[39m[90m 1 |[39m db[33m.[39mflightData[33m.[39minsertMany([{([{
+ [90m   |[39m                            [31m[1m^[22m[39m
+ [90m 2 |[39m         [32m"DepatureAirport"[39m[33m:[39m[32m"MUC"[39m[33m,[39m
+ [90m 3 |[39m         [32m"arrivalAirport"[39m[33m:[39m[32m"SFO"[39m[33m,[39m
+ [90m 4 |[39m         [32m"aircraft"[39m[33m:[39m[32m"Airbus A380"[39m[33m,[39m[0m
+db.flightData.insertMany([{
+        "DepatureAirport":"MUC",
+        "arrivalAirport":"SFO",
+        "aircraft":"Airbus A380",
+        "distance":12000,
+        "intercontinal":true
+    },
+    {
+        "DepatureAirport":"LHR",
+        "arrivalAirport":"TXL",
+        "aircraft":"Airbus A320",
+        "distance":950,
+        "intercontinal":false
+    }])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('67fa460301ddd8a799780c6b'),
+    '1': ObjectId('67fa460301ddd8a799780c6c')
+  }
+}
+db.flightData.find()
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: ObjectId('67fa460301ddd8a799780c6c'),
+  DepatureAirport: 'LHR',
+  arrivalAirport: 'TXL',
+  aircraft: 'Airbus A320',
+  distance: 950,
+  intercontinal: false
+}
+db.flightData.find({name:"Max"})
+db.flightData.find({intercontinental:true})
+db.flightData.find({intercontinental:true})
+db.flightData.find()
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: ObjectId('67fa460301ddd8a799780c6c'),
+  DepatureAirport: 'LHR',
+  arrivalAirport: 'TXL',
+  aircraft: 'Airbus A320',
+  distance: 950,
+  intercontinal: false
+}
+db.flightData.find({intercontinental:true})
+db.flightData.find({intercontinental:true}).pretty()
+db.flightData.find({intercontinal:true}).pretty()
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+db.flightData.find({distance:12000})
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+db.flightData.find({distance:{$gt:10000}})
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+db.flightData.find({distance:{$gt:900}})
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: ObjectId('67fa460301ddd8a799780c6c'),
+  DepatureAirport: 'LHR',
+  arrivalAirport: 'TXL',
+  aircraft: 'Airbus A320',
+  distance: 950,
+  intercontinal: false
+}
+db.flightData.findOne({distance:{$gt:900}})
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+db.flightDate.updateOne({DepatureAirport:"MUC"},{$set:{DepatureAirport:"LCX"}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+db.flightData.find()
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: ObjectId('67fa460301ddd8a799780c6c'),
+  DepatureAirport: 'LHR',
+  arrivalAirport: 'TXL',
+  aircraft: 'Airbus A320',
+  distance: 950,
+  intercontinal: false
+}
+db.flightDate.updateOne({DepatureAirport:"MUC"},{$set:{distance:12500}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+db.flightDate.updateOne({"DepatureAirport":"MUC"},{$set:{distance:12500}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+db.flightData.find()
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: ObjectId('67fa460301ddd8a799780c6c'),
+  DepatureAirport: 'LHR',
+  arrivalAirport: 'TXL',
+  aircraft: 'Airbus A320',
+  distance: 950,
+  intercontinal: false
+}
+db.flightDate.updateOne({ _id: ObjectId('67fa460301ddd8a799780c6b')},{$set:{distance:12500}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+db.flightDate.updateOne({ _id: ObjectId('67fa460301ddd8a799780c6b')},{$set:{delayed:true}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+db.flightDate.updateOne({ _id: ObjectId('67fa460301ddd8a799780c6b')},{delayed:true})
+MongoInvalidArgumentError: Update document requires atomic operators
+db.flightDate.update({ _id: ObjectId('67fa460301ddd8a799780c6b')},{delayed:true})
+DeprecationWarning: Collection.update() is deprecated. Use updateOne, updateMany, or bulkWrite.
+MongoInvalidArgumentError: Update document requires atomic operators
+db.flightDate.update({ _id: ObjectId('67fa460301ddd8a799780c6b')},{delayed:false})
+MongoInvalidArgumentError: Update document requires atomic operators
+db.flightDate.update({ _id: ObjectId('67fa460301ddd8a799780c6b')},{$set{delayed:true}})
+SyntaxError: Unexpected token, expected "," (1:71)
+
+[0m[31m[1m>[22m[39m[90m 1 |[39m db[33m.[39mflightDate[33m.[39mupdate({ _id[33m:[39m [33mObjectId[39m([32m'67fa460301ddd8a799780c6b'[39m)}[33m,[39m{$set{delayed[33m:[39m[36mtrue[39m}})
+ [90m   |[39m                                                                        [31m[1m^[22m[39m[0m
+db.flightDate.updateOne({ _id: ObjectId('67fa460301ddd8a799780c6b')},{$set{delayed:true}})
+SyntaxError: Unexpected token, expected "," (1:74)
+
+[0m[31m[1m>[22m[39m[90m 1 |[39m db[33m.[39mflightDate[33m.[39mupdateOne({ _id[33m:[39m [33mObjectId[39m([32m'67fa460301ddd8a799780c6b'[39m)}[33m,[39m{$set{delayed[33m:[39m[36mtrue[39m}})
+ [90m   |[39m                                                                           [31m[1m^[22m[39m[0m
+db.flightDate.updateOne({ _id: ObjectId("67fa460301ddd8a799780c6b")},{$set{delayed:true}})
+SyntaxError: Unexpected token, expected "," (1:74)
+
+[0m[31m[1m>[22m[39m[90m 1 |[39m db[33m.[39mflightDate[33m.[39mupdateOne({ _id[33m:[39m [33mObjectId[39m([32m"67fa460301ddd8a799780c6b"[39m)}[33m,[39m{$set{delayed[33m:[39m[36mtrue[39m}})
+ [90m   |[39m                                                                           [31m[1m^[22m[39m[0m
+db.flightDate.updateOne({ _id: ObjectId("67fa460301ddd8a799780c6b")},{$set:{delayed:true}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+db.flightData.find()
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: ObjectId('67fa460301ddd8a799780c6c'),
+  DepatureAirport: 'LHR',
+  arrivalAirport: 'TXL',
+  aircraft: 'Airbus A320',
+  distance: 950,
+  intercontinal: false
+}
+db.flightData.updateOne({DepatureAirport: 'LHR'}, {$set: {distance: 1000000}});
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.flightData.find()
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: ObjectId('67fa460301ddd8a799780c6c'),
+  DepatureAirport: 'LHR',
+  arrivalAirport: 'TXL',
+  aircraft: 'Airbus A320',
+  distance: 1000000,
+  intercontinal: false
+}
+db.flightData.updateOne({DepatureAirport: 'LHR'}, {$set: {distance: 3000000}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.flightData.updateOne({DepatureAirport:'LHR'},{$set:{distance: 9000000}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.flightData.updateOne({DepatureAirport:"LHR"},{$set:{distance: 9000000}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+db.flightData.updateOne({DepatureAirport:"LHR"},{$set:{distance: 7000000}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.flightData.find()
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: ObjectId('67fa460301ddd8a799780c6c'),
+  DepatureAirport: 'LHR',
+  arrivalAirport: 'TXL',
+  aircraft: 'Airbus A320',
+  distance: 7000000,
+  intercontinal: false
+}
+db.flightData.updateOne({DepatureAirport:"LHR"},{$set:{distance:950}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.passenger.insertMany([])
+MongoInvalidArgumentError: Invalid BulkOperation, Batch cannot be empty
+db.passenger.insertMany([  {
+        "name":"Chandru",
+        "age":19
+    },
+    {
+        "name":"Ragavan",
+        "age":20
+    },
+    {
+        "name":"vaithees",
+        "age":21
+    },
+    {
+        "name":"Tilak",
+        "age":21
+    },
+    {
+        "name":"Kavi",
+        "age":20
+    },
+    {
+        "name":"mani",
+        "age":20
+    },
+    {
+        "name":"sarjin",
+        "age":19
+    },
+    {
+        "name":"vishnu",
+        "age":18
+    }
+])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('67fa532901ddd8a799780c6d'),
+    '1': ObjectId('67fa532901ddd8a799780c6e'),
+    '2': ObjectId('67fa532901ddd8a799780c6f'),
+    '3': ObjectId('67fa532901ddd8a799780c70'),
+    '4': ObjectId('67fa532901ddd8a799780c71'),
+    '5': ObjectId('67fa532901ddd8a799780c72'),
+    '6': ObjectId('67fa532901ddd8a799780c73'),
+    '7': ObjectId('67fa532901ddd8a799780c74')
+  }
+}
+db.passenger.find()
+{
+  _id: ObjectId('67fa532901ddd8a799780c6d'),
+  name: 'Chandru',
+  age: 19
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c6e'),
+  name: 'Ragavan',
+  age: 20
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c6f'),
+  name: 'vaithees',
+  age: 21
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c70'),
+  name: 'Tilak',
+  age: 21
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c71'),
+  name: 'Kavi',
+  age: 20
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c72'),
+  name: 'mani',
+  age: 20
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c73'),
+  name: 'sarjin',
+  age: 19
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c74'),
+  name: 'vishnu',
+  age: 18
+}
+it
+no cursor
+it
+no cursor
+db.flightData.find().toArray()
+[
+  {
+    _id: ObjectId('67fa460301ddd8a799780c6b'),
+    DepatureAirport: 'MUC',
+    arrivalAirport: 'SFO',
+    aircraft: 'Airbus A380',
+    distance: 12000,
+    intercontinal: true
+  },
+  {
+    _id: ObjectId('67fa460301ddd8a799780c6c'),
+    DepatureAirport: 'LHR',
+    arrivalAirport: 'TXL',
+    aircraft: 'Airbus A320',
+    distance: 950,
+    intercontinal: false
+  }
+]
+db.passenger.find().toArray()
+[
+  {
+    _id: ObjectId('67fa532901ddd8a799780c6d'),
+    name: 'Chandru',
+    age: 19
+  },
+  {
+    _id: ObjectId('67fa532901ddd8a799780c6e'),
+    name: 'Ragavan',
+    age: 20
+  },
+  {
+    _id: ObjectId('67fa532901ddd8a799780c6f'),
+    name: 'vaithees',
+    age: 21
+  },
+  { _id: ObjectId('67fa532901ddd8a799780c70'), name: 'Tilak', age: 21 },
+  { _id: ObjectId('67fa532901ddd8a799780c71'), name: 'Kavi', age: 20 },
+  { _id: ObjectId('67fa532901ddd8a799780c72'), name: 'mani', age: 20 },
+  {
+    _id: ObjectId('67fa532901ddd8a799780c73'),
+    name: 'sarjin',
+    age: 19
+  },
+  {
+    _id: ObjectId('67fa532901ddd8a799780c74'),
+    name: 'vishnu',
+    age: 18
+  }
+]
+db.passenger.find().forEach((passengerData)=>(printjson(passengerData)))
+{ _id: ObjectId('67fa532901ddd8a799780c6d'), name: 'Chandru', age: 19 }
+{ _id: ObjectId('67fa532901ddd8a799780c6e'), name: 'Ragavan', age: 20 }
+{
+  _id: ObjectId('67fa532901ddd8a799780c6f'),
+  name: 'vaithees',
+  age: 21
+}
+{ _id: ObjectId('67fa532901ddd8a799780c70'), name: 'Tilak', age: 21 }
+{ _id: ObjectId('67fa532901ddd8a799780c71'), name: 'Kavi', age: 20 }
+{ _id: ObjectId('67fa532901ddd8a799780c72'), name: 'mani', age: 20 }
+{ _id: ObjectId('67fa532901ddd8a799780c73'), name: 'sarjin', age: 19 }
+{ _id: ObjectId('67fa532901ddd8a799780c74'), name: 'vishnu', age: 18 }
+db.passenger.findOne()
+{
+  _id: ObjectId('67fa532901ddd8a799780c6d'),
+  name: 'Chandru',
+  age: 19
+}
+db.passenger.find({},{name:1}).pretty()
+{
+  _id: ObjectId('67fa532901ddd8a799780c6d'),
+  name: 'Chandru'
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c6e'),
+  name: 'Ragavan'
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c6f'),
+  name: 'vaithees'
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c70'),
+  name: 'Tilak'
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c71'),
+  name: 'Kavi'
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c72'),
+  name: 'mani'
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c73'),
+  name: 'sarjin'
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c74'),
+  name: 'vishnu'
+}
+db.passenger.find({},{name:1,_id:0})
+{
+  name: 'Chandru'
+}
+{
+  name: 'Ragavan'
+}
+{
+  name: 'vaithees'
+}
+{
+  name: 'Tilak'
+}
+{
+  name: 'Kavi'
+}
+{
+  name: 'mani'
+}
+{
+  name: 'sarjin'
+}
+{
+  name: 'vishnu'
+}
+db.flightData.find()
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+show dbs
+admin    40.00 KiB
+config   48.00 KiB
+flights  72.00 KiB
+local    72.00 KiB
+shop     72.00 KiB
+db.flightData.find()
+use flights
+switched to db flights
+db.flightData.find()
+{
+  _id: ObjectId('67f79791fd39283d6ee4cdd7'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: ObjectId('67f79a5ffd39283d6ee4cdd8'),
+  DepatureAirport: 'TXL',
+  arrivalAirport: 'LHR'
+}
+{
+  _id: 'txl-1hr-1',
+  DepatureAirport: 'TXL',
+  arrivalAirport: 'LHR'
+}
+db.flightData.deleteOne({DepatureAirport:"TXL"})
+{
+  acknowledged: true,
+  deletedCount: 1
+}
+db.flightData.find()
+{
+  _id: ObjectId('67f79791fd39283d6ee4cdd7'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: 'txl-1hr-1',
+  DepatureAirport: 'TXL',
+  arrivalAirport: 'LHR'
+}
+db.flightData.deleteMany()
+MongoshInvalidInputError: [COMMON-10001] Missing required argument at position 0 (Collection.deleteMany)
+db.flightData.updateOne({distance:12000},{marker:"delete"})
+MongoInvalidArgumentError: Update document requires atomic operators
+db.flightData.updateOne({distance:12000},{$set: {marker:"delete"}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.flightData.find()
+{
+  _id: ObjectId('67f79791fd39283d6ee4cdd7'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true,
+  marker: 'delete'
+}
+{
+  _id: 'txl-1hr-1',
+  DepatureAirport: 'TXL',
+  arrivalAirport: 'LHR'
+}
+db.flightData.updateMany({},{$set:{marker:"toDelete"}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 2,
+  modifiedCount: 2,
+  upsertedCount: 0
+}
+db.flightData.find()
+{
+  _id: ObjectId('67f79791fd39283d6ee4cdd7'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true,
+  marker: 'toDelete'
+}
+{
+  _id: 'txl-1hr-1',
+  DepatureAirport: 'TXL',
+  arrivalAirport: 'LHR',
+  marker: 'toDelete'
+}
+db.flightData.deleteMany({marker:"toDelete"})
+{
+  acknowledged: true,
+  deletedCount: 2
+}
+db.flightData.find()
+db.flightData([{}])
+TypeError: db.flightData is not a function
+db.flightData([{ {
+        "DepatureAirport":"MUC",
+        "arrivalAirport":"SFO",
+        "aircraft":"Airbus A380",
+        "distance":12000,
+        "intercontinal":true
+    },
+    {
+        "DepatureAirport":"LHR",
+        "arrivalAirport":"TXL",
+        "aircraft":"Airbus A320",
+        "distance":950,
+        "intercontinal":false
+    }}])
+SyntaxError: Unexpected token (1:17)
+
+[0m[31m[1m>[22m[39m[90m 1 |[39m db[33m.[39mflightData([{ {
+ [90m   |[39m                  [31m[1m^[22m[39m
+ [90m 2 |[39m         [32m"DepatureAirport"[39m[33m:[39m[32m"MUC"[39m[33m,[39m
+ [90m 3 |[39m         [32m"arrivalAirport"[39m[33m:[39m[32m"SFO"[39m[33m,[39m
+ [90m 4 |[39m         [32m"aircraft"[39m[33m:[39m[32m"Airbus A380"[39m[33m,[39m[0m
+db.flightData([{
+        "DepatureAirport":"MUC",
+        "arrivalAirport":"SFO",
+        "aircraft":"Airbus A380",
+        "distance":12000,
+        "intercontinal":true
+    },
+    {
+        "DepatureAirport":"LHR",
+        "arrivalAirport":"TXL",
+        "aircraft":"Airbus A320",
+        "distance":950,
+        "intercontinal":false
+    }])
+TypeError: db.flightData is not a function
+db.flightData.insertMany([{$all([{
+        "DepatureAirport":"MUC",
+        "arrivalAirport":"SFO",
+        "aircraft":"Airbus A380",
+        "distance":12000,
+        "intercontinal":true
+    },
+    {
+        "DepatureAirport":"LHR",
+        "arrivalAirport":"TXL",
+        "aircraft":"Airbus A320",
+        "distance":950,
+        "intercontinal":false
+    }])
+SyntaxError: Unexpected token (2:26)
+
+[0m [90m 1 |[39m db[33m.[39mflightData[33m.[39minsertMany([{$all([{
+[31m[1m>[22m[39m[90m 2 |[39m         [32m"DepatureAirport"[39m[33m:[39m[32m"MUC"[39m[33m,[39m
+ [90m   |[39m                           [31m[1m^[22m[39m
+ [90m 3 |[39m         [32m"arrivalAirport"[39m[33m:[39m[32m"SFO"[39m[33m,[39m
+ [90m 4 |[39m         [32m"aircraft"[39m[33m:[39m[32m"Airbus A380"[39m[33m,[39m
+ [90m 5 |[39m         [32m"distance"[39m[33m:[39m[35m12000[39m[33m,[39m[0m
+db.flightData.insertMany([{([{
+        "DepatureAirport":"MUC",
+        "arrivalAirport":"SFO",
+        "aircraft":"Airbus A380",
+        "distance":12000,
+        "intercontinal":true
+    },
+    {
+        "DepatureAirport":"LHR",
+        "arrivalAirport":"TXL",
+        "aircraft":"Airbus A320",
+        "distance":950,
+        "intercontinal":false
+    }])
+SyntaxError: Unexpected token (1:27)
+
+[0m[31m[1m>[22m[39m[90m 1 |[39m db[33m.[39mflightData[33m.[39minsertMany([{([{
+ [90m   |[39m                            [31m[1m^[22m[39m
+ [90m 2 |[39m         [32m"DepatureAirport"[39m[33m:[39m[32m"MUC"[39m[33m,[39m
+ [90m 3 |[39m         [32m"arrivalAirport"[39m[33m:[39m[32m"SFO"[39m[33m,[39m
+ [90m 4 |[39m         [32m"aircraft"[39m[33m:[39m[32m"Airbus A380"[39m[33m,[39m[0m
+db.flightData.insertMany([{
+        "DepatureAirport":"MUC",
+        "arrivalAirport":"SFO",
+        "aircraft":"Airbus A380",
+        "distance":12000,
+        "intercontinal":true
+    },
+    {
+        "DepatureAirport":"LHR",
+        "arrivalAirport":"TXL",
+        "aircraft":"Airbus A320",
+        "distance":950,
+        "intercontinal":false
+    }])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('67fa460301ddd8a799780c6b'),
+    '1': ObjectId('67fa460301ddd8a799780c6c')
+  }
+}
+db.flightData.find()
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: ObjectId('67fa460301ddd8a799780c6c'),
+  DepatureAirport: 'LHR',
+  arrivalAirport: 'TXL',
+  aircraft: 'Airbus A320',
+  distance: 950,
+  intercontinal: false
+}
+db.flightData.find({name:"Max"})
+db.flightData.find({intercontinental:true})
+db.flightData.find({intercontinental:true})
+db.flightData.find()
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: ObjectId('67fa460301ddd8a799780c6c'),
+  DepatureAirport: 'LHR',
+  arrivalAirport: 'TXL',
+  aircraft: 'Airbus A320',
+  distance: 950,
+  intercontinal: false
+}
+db.flightData.find({intercontinental:true})
+db.flightData.find({intercontinental:true}).pretty()
+db.flightData.find({intercontinal:true}).pretty()
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+db.flightData.find({distance:12000})
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+db.flightData.find({distance:{$gt:10000}})
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+db.flightData.find({distance:{$gt:900}})
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: ObjectId('67fa460301ddd8a799780c6c'),
+  DepatureAirport: 'LHR',
+  arrivalAirport: 'TXL',
+  aircraft: 'Airbus A320',
+  distance: 950,
+  intercontinal: false
+}
+db.flightData.findOne({distance:{$gt:900}})
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+db.flightDate.updateOne({DepatureAirport:"MUC"},{$set:{DepatureAirport:"LCX"}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+db.flightData.find()
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: ObjectId('67fa460301ddd8a799780c6c'),
+  DepatureAirport: 'LHR',
+  arrivalAirport: 'TXL',
+  aircraft: 'Airbus A320',
+  distance: 950,
+  intercontinal: false
+}
+db.flightDate.updateOne({DepatureAirport:"MUC"},{$set:{distance:12500}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+db.flightDate.updateOne({"DepatureAirport":"MUC"},{$set:{distance:12500}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+db.flightData.find()
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: ObjectId('67fa460301ddd8a799780c6c'),
+  DepatureAirport: 'LHR',
+  arrivalAirport: 'TXL',
+  aircraft: 'Airbus A320',
+  distance: 950,
+  intercontinal: false
+}
+db.flightDate.updateOne({ _id: ObjectId('67fa460301ddd8a799780c6b')},{$set:{distance:12500}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+db.flightDate.updateOne({ _id: ObjectId('67fa460301ddd8a799780c6b')},{$set:{delayed:true}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+db.flightDate.updateOne({ _id: ObjectId('67fa460301ddd8a799780c6b')},{delayed:true})
+MongoInvalidArgumentError: Update document requires atomic operators
+db.flightDate.update({ _id: ObjectId('67fa460301ddd8a799780c6b')},{delayed:true})
+DeprecationWarning: Collection.update() is deprecated. Use updateOne, updateMany, or bulkWrite.
+MongoInvalidArgumentError: Update document requires atomic operators
+db.flightDate.update({ _id: ObjectId('67fa460301ddd8a799780c6b')},{delayed:false})
+MongoInvalidArgumentError: Update document requires atomic operators
+db.flightDate.update({ _id: ObjectId('67fa460301ddd8a799780c6b')},{$set{delayed:true}})
+SyntaxError: Unexpected token, expected "," (1:71)
+
+[0m[31m[1m>[22m[39m[90m 1 |[39m db[33m.[39mflightDate[33m.[39mupdate({ _id[33m:[39m [33mObjectId[39m([32m'67fa460301ddd8a799780c6b'[39m)}[33m,[39m{$set{delayed[33m:[39m[36mtrue[39m}})
+ [90m   |[39m                                                                        [31m[1m^[22m[39m[0m
+db.flightDate.updateOne({ _id: ObjectId('67fa460301ddd8a799780c6b')},{$set{delayed:true}})
+SyntaxError: Unexpected token, expected "," (1:74)
+
+[0m[31m[1m>[22m[39m[90m 1 |[39m db[33m.[39mflightDate[33m.[39mupdateOne({ _id[33m:[39m [33mObjectId[39m([32m'67fa460301ddd8a799780c6b'[39m)}[33m,[39m{$set{delayed[33m:[39m[36mtrue[39m}})
+ [90m   |[39m                                                                           [31m[1m^[22m[39m[0m
+db.flightDate.updateOne({ _id: ObjectId("67fa460301ddd8a799780c6b")},{$set{delayed:true}})
+SyntaxError: Unexpected token, expected "," (1:74)
+
+[0m[31m[1m>[22m[39m[90m 1 |[39m db[33m.[39mflightDate[33m.[39mupdateOne({ _id[33m:[39m [33mObjectId[39m([32m"67fa460301ddd8a799780c6b"[39m)}[33m,[39m{$set{delayed[33m:[39m[36mtrue[39m}})
+ [90m   |[39m                                                                           [31m[1m^[22m[39m[0m
+db.flightDate.updateOne({ _id: ObjectId("67fa460301ddd8a799780c6b")},{$set:{delayed:true}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+db.flightData.find()
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: ObjectId('67fa460301ddd8a799780c6c'),
+  DepatureAirport: 'LHR',
+  arrivalAirport: 'TXL',
+  aircraft: 'Airbus A320',
+  distance: 950,
+  intercontinal: false
+}
+db.flightData.updateOne({DepatureAirport: 'LHR'}, {$set: {distance: 1000000}});
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.flightData.find()
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: ObjectId('67fa460301ddd8a799780c6c'),
+  DepatureAirport: 'LHR',
+  arrivalAirport: 'TXL',
+  aircraft: 'Airbus A320',
+  distance: 1000000,
+  intercontinal: false
+}
+db.flightData.updateOne({DepatureAirport: 'LHR'}, {$set: {distance: 3000000}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.flightData.updateOne({DepatureAirport:'LHR'},{$set:{distance: 9000000}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.flightData.updateOne({DepatureAirport:"LHR"},{$set:{distance: 9000000}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+db.flightData.updateOne({DepatureAirport:"LHR"},{$set:{distance: 7000000}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.flightData.find()
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: ObjectId('67fa460301ddd8a799780c6c'),
+  DepatureAirport: 'LHR',
+  arrivalAirport: 'TXL',
+  aircraft: 'Airbus A320',
+  distance: 7000000,
+  intercontinal: false
+}
+db.flightData.updateOne({DepatureAirport:"LHR"},{$set:{distance:950}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.passenger.insertMany([])
+MongoInvalidArgumentError: Invalid BulkOperation, Batch cannot be empty
+db.passenger.insertMany([  {
+        "name":"Chandru",
+        "age":19
+    },
+    {
+        "name":"Ragavan",
+        "age":20
+    },
+    {
+        "name":"vaithees",
+        "age":21
+    },
+    {
+        "name":"Tilak",
+        "age":21
+    },
+    {
+        "name":"Kavi",
+        "age":20
+    },
+    {
+        "name":"mani",
+        "age":20
+    },
+    {
+        "name":"sarjin",
+        "age":19
+    },
+    {
+        "name":"vishnu",
+        "age":18
+    }
+])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('67fa532901ddd8a799780c6d'),
+    '1': ObjectId('67fa532901ddd8a799780c6e'),
+    '2': ObjectId('67fa532901ddd8a799780c6f'),
+    '3': ObjectId('67fa532901ddd8a799780c70'),
+    '4': ObjectId('67fa532901ddd8a799780c71'),
+    '5': ObjectId('67fa532901ddd8a799780c72'),
+    '6': ObjectId('67fa532901ddd8a799780c73'),
+    '7': ObjectId('67fa532901ddd8a799780c74')
+  }
+}
+db.passenger.find()
+{
+  _id: ObjectId('67fa532901ddd8a799780c6d'),
+  name: 'Chandru',
+  age: 19
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c6e'),
+  name: 'Ragavan',
+  age: 20
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c6f'),
+  name: 'vaithees',
+  age: 21
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c70'),
+  name: 'Tilak',
+  age: 21
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c71'),
+  name: 'Kavi',
+  age: 20
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c72'),
+  name: 'mani',
+  age: 20
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c73'),
+  name: 'sarjin',
+  age: 19
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c74'),
+  name: 'vishnu',
+  age: 18
+}
+it
+no cursor
+it
+no cursor
+db.flightData.find().toArray()
+[
+  {
+    _id: ObjectId('67fa460301ddd8a799780c6b'),
+    DepatureAirport: 'MUC',
+    arrivalAirport: 'SFO',
+    aircraft: 'Airbus A380',
+    distance: 12000,
+    intercontinal: true
+  },
+  {
+    _id: ObjectId('67fa460301ddd8a799780c6c'),
+    DepatureAirport: 'LHR',
+    arrivalAirport: 'TXL',
+    aircraft: 'Airbus A320',
+    distance: 950,
+    intercontinal: false
+  }
+]
+db.passenger.find().toArray()
+[
+  {
+    _id: ObjectId('67fa532901ddd8a799780c6d'),
+    name: 'Chandru',
+    age: 19
+  },
+  {
+    _id: ObjectId('67fa532901ddd8a799780c6e'),
+    name: 'Ragavan',
+    age: 20
+  },
+  {
+    _id: ObjectId('67fa532901ddd8a799780c6f'),
+    name: 'vaithees',
+    age: 21
+  },
+  { _id: ObjectId('67fa532901ddd8a799780c70'), name: 'Tilak', age: 21 },
+  { _id: ObjectId('67fa532901ddd8a799780c71'), name: 'Kavi', age: 20 },
+  { _id: ObjectId('67fa532901ddd8a799780c72'), name: 'mani', age: 20 },
+  {
+    _id: ObjectId('67fa532901ddd8a799780c73'),
+    name: 'sarjin',
+    age: 19
+  },
+  {
+    _id: ObjectId('67fa532901ddd8a799780c74'),
+    name: 'vishnu',
+    age: 18
+  }
+]
+db.passenger.find().forEach((passengerData)=>(printjson(passengerData)))
+{ _id: ObjectId('67fa532901ddd8a799780c6d'), name: 'Chandru', age: 19 }
+{ _id: ObjectId('67fa532901ddd8a799780c6e'), name: 'Ragavan', age: 20 }
+{
+  _id: ObjectId('67fa532901ddd8a799780c6f'),
+  name: 'vaithees',
+  age: 21
+}
+{ _id: ObjectId('67fa532901ddd8a799780c70'), name: 'Tilak', age: 21 }
+{ _id: ObjectId('67fa532901ddd8a799780c71'), name: 'Kavi', age: 20 }
+{ _id: ObjectId('67fa532901ddd8a799780c72'), name: 'mani', age: 20 }
+{ _id: ObjectId('67fa532901ddd8a799780c73'), name: 'sarjin', age: 19 }
+{ _id: ObjectId('67fa532901ddd8a799780c74'), name: 'vishnu', age: 18 }
+db.passenger.findOne()
+{
+  _id: ObjectId('67fa532901ddd8a799780c6d'),
+  name: 'Chandru',
+  age: 19
+}
+db.passenger.find({},{name:1}).pretty()
+{
+  _id: ObjectId('67fa532901ddd8a799780c6d'),
+  name: 'Chandru'
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c6e'),
+  name: 'Ragavan'
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c6f'),
+  name: 'vaithees'
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c70'),
+  name: 'Tilak'
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c71'),
+  name: 'Kavi'
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c72'),
+  name: 'mani'
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c73'),
+  name: 'sarjin'
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c74'),
+  name: 'vishnu'
+}
+db.passenger.find({},{name:1,_id:0})
+{
+  name: 'Chandru'
+}
+{
+  name: 'Ragavan'
+}
+{
+  name: 'vaithees'
+}
+{
+  name: 'Tilak'
+}
+{
+  name: 'Kavi'
+}
+{
+  name: 'mani'
+}
+{
+  name: 'sarjin'
+}
+{
+  name: 'vishnu'
+}
+db.flightData.find()
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+show dbs
+admin    40.00 KiB
+config   48.00 KiB
+flights  72.00 KiB
+local    72.00 KiB
+shop     72.00 KiB
+db.flightData.find()
+use flights
+switched to db flights
+db.flightData.find()
+{
+  _id: ObjectId('67f79791fd39283d6ee4cdd7'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: ObjectId('67f79a5ffd39283d6ee4cdd8'),
+  DepatureAirport: 'TXL',
+  arrivalAirport: 'LHR'
+}
+{
+  _id: 'txl-1hr-1',
+  DepatureAirport: 'TXL',
+  arrivalAirport: 'LHR'
+}
+db.flightData.deleteOne({DepatureAirport:"TXL"})
+{
+  acknowledged: true,
+  deletedCount: 1
+}
+db.flightData.find()
+{
+  _id: ObjectId('67f79791fd39283d6ee4cdd7'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: 'txl-1hr-1',
+  DepatureAirport: 'TXL',
+  arrivalAirport: 'LHR'
+}
+db.flightData.deleteMany()
+MongoshInvalidInputError: [COMMON-10001] Missing required argument at position 0 (Collection.deleteMany)
+db.flightData.updateOne({distance:12000},{marker:"delete"})
+MongoInvalidArgumentError: Update document requires atomic operators
+db.flightData.updateOne({distance:12000},{$set: {marker:"delete"}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.flightData.find()
+{
+  _id: ObjectId('67f79791fd39283d6ee4cdd7'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true,
+  marker: 'delete'
+}
+{
+  _id: 'txl-1hr-1',
+  DepatureAirport: 'TXL',
+  arrivalAirport: 'LHR'
+}
+db.flightData.updateMany({},{$set:{marker:"toDelete"}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 2,
+  modifiedCount: 2,
+  upsertedCount: 0
+}
+db.flightData.find()
+{
+  _id: ObjectId('67f79791fd39283d6ee4cdd7'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true,
+  marker: 'toDelete'
+}
+{
+  _id: 'txl-1hr-1',
+  DepatureAirport: 'TXL',
+  arrivalAirport: 'LHR',
+  marker: 'toDelete'
+}
+db.flightData.deleteMany({marker:"toDelete"})
+{
+  acknowledged: true,
+  deletedCount: 2
+}
+db.flightData.find()
+db.flightData([{}])
+TypeError: db.flightData is not a function
+db.flightData([{ {
+        "DepatureAirport":"MUC",
+        "arrivalAirport":"SFO",
+        "aircraft":"Airbus A380",
+        "distance":12000,
+        "intercontinal":true
+    },
+    {
+        "DepatureAirport":"LHR",
+        "arrivalAirport":"TXL",
+        "aircraft":"Airbus A320",
+        "distance":950,
+        "intercontinal":false
+    }}])
+SyntaxError: Unexpected token (1:17)
+
+[0m[31m[1m>[22m[39m[90m 1 |[39m db[33m.[39mflightData([{ {
+ [90m   |[39m                  [31m[1m^[22m[39m
+ [90m 2 |[39m         [32m"DepatureAirport"[39m[33m:[39m[32m"MUC"[39m[33m,[39m
+ [90m 3 |[39m         [32m"arrivalAirport"[39m[33m:[39m[32m"SFO"[39m[33m,[39m
+ [90m 4 |[39m         [32m"aircraft"[39m[33m:[39m[32m"Airbus A380"[39m[33m,[39m[0m
+db.flightData([{
+        "DepatureAirport":"MUC",
+        "arrivalAirport":"SFO",
+        "aircraft":"Airbus A380",
+        "distance":12000,
+        "intercontinal":true
+    },
+    {
+        "DepatureAirport":"LHR",
+        "arrivalAirport":"TXL",
+        "aircraft":"Airbus A320",
+        "distance":950,
+        "intercontinal":false
+    }])
+TypeError: db.flightData is not a function
+db.flightData.insertMany([{$all([{
+        "DepatureAirport":"MUC",
+        "arrivalAirport":"SFO",
+        "aircraft":"Airbus A380",
+        "distance":12000,
+        "intercontinal":true
+    },
+    {
+        "DepatureAirport":"LHR",
+        "arrivalAirport":"TXL",
+        "aircraft":"Airbus A320",
+        "distance":950,
+        "intercontinal":false
+    }])
+SyntaxError: Unexpected token (2:26)
+
+[0m [90m 1 |[39m db[33m.[39mflightData[33m.[39minsertMany([{$all([{
+[31m[1m>[22m[39m[90m 2 |[39m         [32m"DepatureAirport"[39m[33m:[39m[32m"MUC"[39m[33m,[39m
+ [90m   |[39m                           [31m[1m^[22m[39m
+ [90m 3 |[39m         [32m"arrivalAirport"[39m[33m:[39m[32m"SFO"[39m[33m,[39m
+ [90m 4 |[39m         [32m"aircraft"[39m[33m:[39m[32m"Airbus A380"[39m[33m,[39m
+ [90m 5 |[39m         [32m"distance"[39m[33m:[39m[35m12000[39m[33m,[39m[0m
+db.flightData.insertMany([{([{
+        "DepatureAirport":"MUC",
+        "arrivalAirport":"SFO",
+        "aircraft":"Airbus A380",
+        "distance":12000,
+        "intercontinal":true
+    },
+    {
+        "DepatureAirport":"LHR",
+        "arrivalAirport":"TXL",
+        "aircraft":"Airbus A320",
+        "distance":950,
+        "intercontinal":false
+    }])
+SyntaxError: Unexpected token (1:27)
+
+[0m[31m[1m>[22m[39m[90m 1 |[39m db[33m.[39mflightData[33m.[39minsertMany([{([{
+ [90m   |[39m                            [31m[1m^[22m[39m
+ [90m 2 |[39m         [32m"DepatureAirport"[39m[33m:[39m[32m"MUC"[39m[33m,[39m
+ [90m 3 |[39m         [32m"arrivalAirport"[39m[33m:[39m[32m"SFO"[39m[33m,[39m
+ [90m 4 |[39m         [32m"aircraft"[39m[33m:[39m[32m"Airbus A380"[39m[33m,[39m[0m
+db.flightData.insertMany([{
+        "DepatureAirport":"MUC",
+        "arrivalAirport":"SFO",
+        "aircraft":"Airbus A380",
+        "distance":12000,
+        "intercontinal":true
+    },
+    {
+        "DepatureAirport":"LHR",
+        "arrivalAirport":"TXL",
+        "aircraft":"Airbus A320",
+        "distance":950,
+        "intercontinal":false
+    }])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('67fa460301ddd8a799780c6b'),
+    '1': ObjectId('67fa460301ddd8a799780c6c')
+  }
+}
+db.flightData.find()
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: ObjectId('67fa460301ddd8a799780c6c'),
+  DepatureAirport: 'LHR',
+  arrivalAirport: 'TXL',
+  aircraft: 'Airbus A320',
+  distance: 950,
+  intercontinal: false
+}
+db.flightData.find({name:"Max"})
+db.flightData.find({intercontinental:true})
+db.flightData.find({intercontinental:true})
+db.flightData.find()
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: ObjectId('67fa460301ddd8a799780c6c'),
+  DepatureAirport: 'LHR',
+  arrivalAirport: 'TXL',
+  aircraft: 'Airbus A320',
+  distance: 950,
+  intercontinal: false
+}
+db.flightData.find({intercontinental:true})
+db.flightData.find({intercontinental:true}).pretty()
+db.flightData.find({intercontinal:true}).pretty()
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+db.flightData.find({distance:12000})
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+db.flightData.find({distance:{$gt:10000}})
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+db.flightData.find({distance:{$gt:900}})
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: ObjectId('67fa460301ddd8a799780c6c'),
+  DepatureAirport: 'LHR',
+  arrivalAirport: 'TXL',
+  aircraft: 'Airbus A320',
+  distance: 950,
+  intercontinal: false
+}
+db.flightData.findOne({distance:{$gt:900}})
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+db.flightDate.updateOne({DepatureAirport:"MUC"},{$set:{DepatureAirport:"LCX"}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+db.flightData.find()
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: ObjectId('67fa460301ddd8a799780c6c'),
+  DepatureAirport: 'LHR',
+  arrivalAirport: 'TXL',
+  aircraft: 'Airbus A320',
+  distance: 950,
+  intercontinal: false
+}
+db.flightDate.updateOne({DepatureAirport:"MUC"},{$set:{distance:12500}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+db.flightDate.updateOne({"DepatureAirport":"MUC"},{$set:{distance:12500}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+db.flightData.find()
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: ObjectId('67fa460301ddd8a799780c6c'),
+  DepatureAirport: 'LHR',
+  arrivalAirport: 'TXL',
+  aircraft: 'Airbus A320',
+  distance: 950,
+  intercontinal: false
+}
+db.flightDate.updateOne({ _id: ObjectId('67fa460301ddd8a799780c6b')},{$set:{distance:12500}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+db.flightDate.updateOne({ _id: ObjectId('67fa460301ddd8a799780c6b')},{$set:{delayed:true}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+db.flightDate.updateOne({ _id: ObjectId('67fa460301ddd8a799780c6b')},{delayed:true})
+MongoInvalidArgumentError: Update document requires atomic operators
+db.flightDate.update({ _id: ObjectId('67fa460301ddd8a799780c6b')},{delayed:true})
+DeprecationWarning: Collection.update() is deprecated. Use updateOne, updateMany, or bulkWrite.
+MongoInvalidArgumentError: Update document requires atomic operators
+db.flightDate.update({ _id: ObjectId('67fa460301ddd8a799780c6b')},{delayed:false})
+MongoInvalidArgumentError: Update document requires atomic operators
+db.flightDate.update({ _id: ObjectId('67fa460301ddd8a799780c6b')},{$set{delayed:true}})
+SyntaxError: Unexpected token, expected "," (1:71)
+
+[0m[31m[1m>[22m[39m[90m 1 |[39m db[33m.[39mflightDate[33m.[39mupdate({ _id[33m:[39m [33mObjectId[39m([32m'67fa460301ddd8a799780c6b'[39m)}[33m,[39m{$set{delayed[33m:[39m[36mtrue[39m}})
+ [90m   |[39m                                                                        [31m[1m^[22m[39m[0m
+db.flightDate.updateOne({ _id: ObjectId('67fa460301ddd8a799780c6b')},{$set{delayed:true}})
+SyntaxError: Unexpected token, expected "," (1:74)
+
+[0m[31m[1m>[22m[39m[90m 1 |[39m db[33m.[39mflightDate[33m.[39mupdateOne({ _id[33m:[39m [33mObjectId[39m([32m'67fa460301ddd8a799780c6b'[39m)}[33m,[39m{$set{delayed[33m:[39m[36mtrue[39m}})
+ [90m   |[39m                                                                           [31m[1m^[22m[39m[0m
+db.flightDate.updateOne({ _id: ObjectId("67fa460301ddd8a799780c6b")},{$set{delayed:true}})
+SyntaxError: Unexpected token, expected "," (1:74)
+
+[0m[31m[1m>[22m[39m[90m 1 |[39m db[33m.[39mflightDate[33m.[39mupdateOne({ _id[33m:[39m [33mObjectId[39m([32m"67fa460301ddd8a799780c6b"[39m)}[33m,[39m{$set{delayed[33m:[39m[36mtrue[39m}})
+ [90m   |[39m                                                                           [31m[1m^[22m[39m[0m
+db.flightDate.updateOne({ _id: ObjectId("67fa460301ddd8a799780c6b")},{$set:{delayed:true}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+db.flightData.find()
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: ObjectId('67fa460301ddd8a799780c6c'),
+  DepatureAirport: 'LHR',
+  arrivalAirport: 'TXL',
+  aircraft: 'Airbus A320',
+  distance: 950,
+  intercontinal: false
+}
+db.flightData.updateOne({DepatureAirport: 'LHR'}, {$set: {distance: 1000000}});
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.flightData.find()
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: ObjectId('67fa460301ddd8a799780c6c'),
+  DepatureAirport: 'LHR',
+  arrivalAirport: 'TXL',
+  aircraft: 'Airbus A320',
+  distance: 1000000,
+  intercontinal: false
+}
+db.flightData.updateOne({DepatureAirport: 'LHR'}, {$set: {distance: 3000000}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.flightData.updateOne({DepatureAirport:'LHR'},{$set:{distance: 9000000}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.flightData.updateOne({DepatureAirport:"LHR"},{$set:{distance: 9000000}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 0,
+  upsertedCount: 0
+}
+db.flightData.updateOne({DepatureAirport:"LHR"},{$set:{distance: 7000000}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.flightData.find()
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: ObjectId('67fa460301ddd8a799780c6c'),
+  DepatureAirport: 'LHR',
+  arrivalAirport: 'TXL',
+  aircraft: 'Airbus A320',
+  distance: 7000000,
+  intercontinal: false
+}
+db.flightData.updateOne({DepatureAirport:"LHR"},{$set:{distance:950}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.passenger.insertMany([])
+MongoInvalidArgumentError: Invalid BulkOperation, Batch cannot be empty
+db.passenger.insertMany([  {
+        "name":"Chandru",
+        "age":19
+    },
+    {
+        "name":"Ragavan",
+        "age":20
+    },
+    {
+        "name":"vaithees",
+        "age":21
+    },
+    {
+        "name":"Tilak",
+        "age":21
+    },
+    {
+        "name":"Kavi",
+        "age":20
+    },
+    {
+        "name":"mani",
+        "age":20
+    },
+    {
+        "name":"sarjin",
+        "age":19
+    },
+    {
+        "name":"vishnu",
+        "age":18
+    }
+])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('67fa532901ddd8a799780c6d'),
+    '1': ObjectId('67fa532901ddd8a799780c6e'),
+    '2': ObjectId('67fa532901ddd8a799780c6f'),
+    '3': ObjectId('67fa532901ddd8a799780c70'),
+    '4': ObjectId('67fa532901ddd8a799780c71'),
+    '5': ObjectId('67fa532901ddd8a799780c72'),
+    '6': ObjectId('67fa532901ddd8a799780c73'),
+    '7': ObjectId('67fa532901ddd8a799780c74')
+  }
+}
+db.passenger.find()
+{
+  _id: ObjectId('67fa532901ddd8a799780c6d'),
+  name: 'Chandru',
+  age: 19
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c6e'),
+  name: 'Ragavan',
+  age: 20
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c6f'),
+  name: 'vaithees',
+  age: 21
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c70'),
+  name: 'Tilak',
+  age: 21
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c71'),
+  name: 'Kavi',
+  age: 20
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c72'),
+  name: 'mani',
+  age: 20
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c73'),
+  name: 'sarjin',
+  age: 19
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c74'),
+  name: 'vishnu',
+  age: 18
+}
+it
+no cursor
+it
+no cursor
+db.flightData.find().toArray()
+[
+  {
+    _id: ObjectId('67fa460301ddd8a799780c6b'),
+    DepatureAirport: 'MUC',
+    arrivalAirport: 'SFO',
+    aircraft: 'Airbus A380',
+    distance: 12000,
+    intercontinal: true
+  },
+  {
+    _id: ObjectId('67fa460301ddd8a799780c6c'),
+    DepatureAirport: 'LHR',
+    arrivalAirport: 'TXL',
+    aircraft: 'Airbus A320',
+    distance: 950,
+    intercontinal: false
+  }
+]
+db.passenger.find().toArray()
+[
+  {
+    _id: ObjectId('67fa532901ddd8a799780c6d'),
+    name: 'Chandru',
+    age: 19
+  },
+  {
+    _id: ObjectId('67fa532901ddd8a799780c6e'),
+    name: 'Ragavan',
+    age: 20
+  },
+  {
+    _id: ObjectId('67fa532901ddd8a799780c6f'),
+    name: 'vaithees',
+    age: 21
+  },
+  { _id: ObjectId('67fa532901ddd8a799780c70'), name: 'Tilak', age: 21 },
+  { _id: ObjectId('67fa532901ddd8a799780c71'), name: 'Kavi', age: 20 },
+  { _id: ObjectId('67fa532901ddd8a799780c72'), name: 'mani', age: 20 },
+  {
+    _id: ObjectId('67fa532901ddd8a799780c73'),
+    name: 'sarjin',
+    age: 19
+  },
+  {
+    _id: ObjectId('67fa532901ddd8a799780c74'),
+    name: 'vishnu',
+    age: 18
+  }
+]
+db.passenger.find().forEach((passengerData)=>(printjson(passengerData)))
+{ _id: ObjectId('67fa532901ddd8a799780c6d'), name: 'Chandru', age: 19 }
+{ _id: ObjectId('67fa532901ddd8a799780c6e'), name: 'Ragavan', age: 20 }
+{
+  _id: ObjectId('67fa532901ddd8a799780c6f'),
+  name: 'vaithees',
+  age: 21
+}
+{ _id: ObjectId('67fa532901ddd8a799780c70'), name: 'Tilak', age: 21 }
+{ _id: ObjectId('67fa532901ddd8a799780c71'), name: 'Kavi', age: 20 }
+{ _id: ObjectId('67fa532901ddd8a799780c72'), name: 'mani', age: 20 }
+{ _id: ObjectId('67fa532901ddd8a799780c73'), name: 'sarjin', age: 19 }
+{ _id: ObjectId('67fa532901ddd8a799780c74'), name: 'vishnu', age: 18 }
+db.passenger.findOne()
+{
+  _id: ObjectId('67fa532901ddd8a799780c6d'),
+  name: 'Chandru',
+  age: 19
+}
+db.passenger.find({},{name:1}).pretty()
+{
+  _id: ObjectId('67fa532901ddd8a799780c6d'),
+  name: 'Chandru'
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c6e'),
+  name: 'Ragavan'
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c6f'),
+  name: 'vaithees'
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c70'),
+  name: 'Tilak'
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c71'),
+  name: 'Kavi'
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c72'),
+  name: 'mani'
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c73'),
+  name: 'sarjin'
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c74'),
+  name: 'vishnu'
+}
+db.passenger.find({},{name:1,_id:0})
+{
+  name: 'Chandru'
+}
+{
+  name: 'Ragavan'
+}
+{
+  name: 'vaithees'
+}
+{
+  name: 'Tilak'
+}
+{
+  name: 'Kavi'
+}
+{
+  name: 'mani'
+}
+{
+  name: 'sarjin'
+}
+{
+  name: 'vishnu'
+}
+db.flightData.find()
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true
+}
+{
+  _id: ObjectId('67fa460301ddd8a799780c6c'),
+  DepatureAirport: 'LHR',
+  arrivalAirport: 'TXL',
+  aircraft: 'Airbus A320',
+  distance: 950,
+  intercontinal: false
+}
+db.flightData.updateMany({},{$set:{status:{description:"on_time",lastupdated:"1 Hour ago"}}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 2,
+  modifiedCount: 2,
+  upsertedCount: 0
+}
+db.flightData.find()
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true,
+  status: {
+    description: 'on_time',
+    lastupdated: '1 Hour ago'
+  }
+}
+{
+  _id: ObjectId('67fa460301ddd8a799780c6c'),
+  DepatureAirport: 'LHR',
+  arrivalAirport: 'TXL',
+  aircraft: 'Airbus A320',
+  distance: 950,
+  intercontinal: false,
+  status: {
+    description: 'on_time',
+    lastupdated: '1 Hour ago'
+  }
+}
+db.flightData.updateMany({},{$set:{status:{description:"on_time",lastupdated:"1 Hour ago",{Responsible:"Chandru"}}}})
+SyntaxError: Unexpected token (1:90)
+
+[0m[31m[1m>[22m[39m[90m 1 |[39m db[33m.[39mflightData[33m.[39mupdateMany({}[33m,[39m{$set[33m:[39m{status[33m:[39m{description[33m:[39m[32m"on_time"[39m[33m,[39mlastupdated[33m:[39m[32m"1 Hour ago"[39m[33m,[39m{[33mResponsible[39m[33m:[39m[32m"Chandru"[39m}}}})
+ [90m   |[39m                                                                                           [31m[1m^[22m[39m[0m
+db.flightData.updateMany({},{$set:{status:{description:"on_time",lastupdated:"1 Hour ago",Details:{Responsible:"Chandru"}}}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 2,
+  modifiedCount: 2,
+  upsertedCount: 0
+}
+db.flightData.find()
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true,
+  status: {
+    description: 'on_time',
+    lastupdated: '1 Hour ago',
+    Details: {
+      Responsible: 'Chandru'
+    }
+  }
+}
+{
+  _id: ObjectId('67fa460301ddd8a799780c6c'),
+  DepatureAirport: 'LHR',
+  arrivalAirport: 'TXL',
+  aircraft: 'Airbus A320',
+  distance: 950,
+  intercontinal: false,
+  status: {
+    description: 'on_time',
+    lastupdated: '1 Hour ago',
+    Details: {
+      Responsible: 'Chandru'
+    }
+  }
+}
+db.passenger.find()
+{
+  _id: ObjectId('67fa532901ddd8a799780c6d'),
+  name: 'Chandru',
+  age: 19
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c6e'),
+  name: 'Ragavan',
+  age: 20
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c6f'),
+  name: 'vaithees',
+  age: 21
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c70'),
+  name: 'Tilak',
+  age: 21
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c71'),
+  name: 'Kavi',
+  age: 20
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c72'),
+  name: 'mani',
+  age: 20
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c73'),
+  name: 'sarjin',
+  age: 19
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c74'),
+  name: 'vishnu',
+  age: 18
+}
+db.passenger.updateOne({name"vishnu},{$set:{Hobbies["cooking","Playing"]}})
+SyntaxError: Unexpected token, expected "," (1:28)
+
+[0m[31m[1m>[22m[39m[90m 1 |[39m db[33m.[39mpassenger[33m.[39mupdateOne({name[32m"vishnu},{$set:{Hobbies["[39mcooking[32m","[39m[33mPlaying[39m[32m"]}})[39m
+ [90m   |[39m                             [31m[1m^[22m[39m[0m
+db.passenger.updateOne({name"vishnu"},{$set:{Hobbies["cooking","Playing"]}})
+SyntaxError: Unexpected token, expected "," (1:28)
+
+[0m[31m[1m>[22m[39m[90m 1 |[39m db[33m.[39mpassenger[33m.[39mupdateOne({name[32m"vishnu"[39m}[33m,[39m{$set[33m:[39m{[33mHobbies[39m[[32m"cooking"[39m[33m,[39m[32m"Playing"[39m]}})
+ [90m   |[39m                             [31m[1m^[22m[39m[0m
+db.passenger.updateOne({name:"vishnu"},{$set:{Hobbies:["cooking","Playing"]}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.passenger.find()
+{
+  _id: ObjectId('67fa532901ddd8a799780c6d'),
+  name: 'Chandru',
+  age: 19
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c6e'),
+  name: 'Ragavan',
+  age: 20
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c6f'),
+  name: 'vaithees',
+  age: 21
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c70'),
+  name: 'Tilak',
+  age: 21
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c71'),
+  name: 'Kavi',
+  age: 20
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c72'),
+  name: 'mani',
+  age: 20
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c73'),
+  name: 'sarjin',
+  age: 19
+}
+{
+  _id: ObjectId('67fa532901ddd8a799780c74'),
+  name: 'vishnu',
+  age: 18,
+  Hobbies: [
+    'cooking',
+    'Playing'
+  ]
+}
+db.passenger.find(name:"chandru")
+SyntaxError: Unexpected token, expected "," (1:22)
+
+[0m[31m[1m>[22m[39m[90m 1 |[39m db[33m.[39mpassenger[33m.[39mfind(name[33m:[39m[32m"chandru"[39m)
+ [90m   |[39m                       [31m[1m^[22m[39m[0m
+db.passenger.find({name:"chandru"})
+db.passenger.find({name:"Vishnu"})
+db.passenger.find({name:"Vishnu"}).pretty()
+db.passenger.find({name:"vishnu"})
+{
+  _id: ObjectId('67fa532901ddd8a799780c74'),
+  name: 'vishnu',
+  age: 18,
+  Hobbies: [
+    'cooking',
+    'Playing'
+  ]
+}
+db.passenger.findOne({name:"vishnu"}).Hobbies
+[ 'cooking', 'Playing' ]
+db.passenger.find({name:"vishnu"}).Hobbies
+db.passenger.find({hobbies:"cooking"})
+db.passenger.find({Hobbies:"cooking"})
+{
+  _id: ObjectId('67fa532901ddd8a799780c74'),
+  name: 'vishnu',
+  age: 18,
+  Hobbies: [
+    'cooking',
+    'Playing'
+  ]
+}
+db.flightData.find()
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true,
+  status: {
+    description: 'on_time',
+    lastupdated: '1 Hour ago',
+    Details: {
+      Responsible: 'Chandru'
+    }
+  }
+}
+{
+  _id: ObjectId('67fa460301ddd8a799780c6c'),
+  DepatureAirport: 'LHR',
+  arrivalAirport: 'TXL',
+  aircraft: 'Airbus A320',
+  distance: 950,
+  intercontinal: false,
+  status: {
+    description: 'on_time',
+    lastupdated: '1 Hour ago',
+    Details: {
+      Responsible: 'Chandru'
+    }
+  }
+}
+db.flightData.find({"status.description":"on_time"})
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true,
+  status: {
+    description: 'on_time',
+    lastupdated: '1 Hour ago',
+    Details: {
+      Responsible: 'Chandru'
+    }
+  }
+}
+{
+  _id: ObjectId('67fa460301ddd8a799780c6c'),
+  DepatureAirport: 'LHR',
+  arrivalAirport: 'TXL',
+  aircraft: 'Airbus A320',
+  distance: 950,
+  intercontinal: false,
+  status: {
+    description: 'on_time',
+    lastupdated: '1 Hour ago',
+    Details: {
+      Responsible: 'Chandru'
+    }
+  }
+}
+db.flightData.find({"status.details.Responsible":"Chandru"})
+db.flightData.find({"status.Details.Responsible":"Chandru"})
+{
+  _id: ObjectId('67fa460301ddd8a799780c6b'),
+  DepatureAirport: 'MUC',
+  arrivalAirport: 'SFO',
+  aircraft: 'Airbus A380',
+  distance: 12000,
+  intercontinal: true,
+  status: {
+    description: 'on_time',
+    lastupdated: '1 Hour ago',
+    Details: {
+      Responsible: 'Chandru'
+    }
+  }
+}
+
+
