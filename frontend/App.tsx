@@ -33,13 +33,7 @@ function App() {
   const scrollViewRef = useRef();
 
   const [umsg, setUmsg] = useState([
-    { mstype: "bot", msg: "Hello! 👋 How can I help you?", time: "06:30pm" },
-    { mstype: "user", msg: "Hi, tell me about your services. 📦", time: "06:30pm" },
-    { mstype: "bot", msg: "Sure! ✅ We offer 24/7 support 🕒 and fast delivery 🚚.", time: "06:31pm" },
-    { mstype: "user", msg: "Do you have any discounts? 💸", time: "06:32pm" },
-    { mstype: "bot", msg: "Yes! 🎉 Use code WELCOME10 to get 10% off. 🛍️", time: "06:32pm" },
-    { mstype: "user", msg: "Nice! 😄 Can I return items? 🔄", time: "06:33pm" },
-    { mstype: "bot", msg: "Yes, returns are accepted within 7 days. ✅📦", time: "06:33pm" },
+
   ]);
 
   function formatDate(date) {
@@ -66,11 +60,13 @@ function App() {
     setInputText('');
   
     try {
-      const response = await axios.post('http://192.168.150.102:3001/chat', {
+      const response = await axios.post('http://192.168.150.102:3002/chat', {
         prompt: inputText,
       });
   
-      const fullBotMsg = response.data;
+      const word = response.data;
+      const fullBotMsg = word.replace(/<think>.*?<\/think>/gs, '');
+      console.log(fullBotMsg)
       typewriterEffect(fullBotMsg, formattedTime, setUmsg, scrollViewRef);
  // Use the typing effect
   
@@ -121,7 +117,7 @@ function App() {
         style={styles.background}
         resizeMode="cover"
       > */}
-      
+      <View style={{height:"100%", backgroundColor:"#343a40"}}>
         <Appbar.Header style={{backgroundColor: "#40916c"}}>
           <View style={{ marginLeft: 10, marginRight: 10 }}>
             <Logo width={50} height={50} />
@@ -169,7 +165,7 @@ function App() {
             right={<TextInput.Icon icon="send" onPress={handleSend} color={"white"} style={{backgroundColor:"#3a86ff", paddingLeft:5}}/>}
             left={<TextInput.Icon icon="attachment" />}
           />
-        </View>
+        </View></View>
       {/* </ImageBackground> */}
     </PaperProvider>
   );
@@ -221,6 +217,29 @@ const markdownStyles = {
     color: 'black', // text beside the marker
     fontSize: 16,
   },
+  code_block: {
+    backgroundColor: '#1e1e1e', // dark background for code blocks
+    color: '#dcdcdc',           // text color inside code blocks
+    fontFamily: 'Courier New',  // monospace font
+    padding: 10,
+    borderRadius: 8,
+  },
+  fence: {
+    backgroundColor: '#1e1e1e',
+    color: '#dcdcdc',
+    fontFamily: 'Courier New',
+    padding: 10,
+    borderRadius: 8,
+  },
+  inlineCode: {
+    backgroundColor: '#f5f5f5', // light background for inline code
+    color: '#c7254e',           // inline code text color
+    fontFamily: 'Courier New',
+    paddingHorizontal: 4,
+    paddingVertical: 2,
+    borderRadius: 4,
+  },
+  
 };
 
 
@@ -231,7 +250,8 @@ const styles = StyleSheet.create({
   container: {
     padding: 10,
     paddingBottom: 30,
-    backgroundColor:"#343a40"
+    backgroundColor:"#343a40",
+ 
   },
   messageContainer: {
     marginVertical: 5,
