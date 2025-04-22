@@ -200,25 +200,23 @@ class GestureRecognizer:
 
 
 
+def handle_gesture(gesture):
+    print(f"🔥 Action triggered for: {gesture}")
+    if gesture == "open_palm":
+        print("💬 Starting conversation...")
+    elif gesture == "topic_1":
+        print("☁️ Topic 1: Weather, News")
+    elif gesture == "topic_2":
+        print("🍳 Topic 2: Cooking Tips")
+    elif gesture == "topic_3":
+        print("📖 Topic 3: Stories")
+    elif gesture == "topic_4":
+        print("🎉 Topic 4: Fun Talking")
+    elif gesture == "closed_fist":
+        print("🛑 Exiting gesture mode.")
 
-# def handle_gesture(gesture):
-#     print(f"🔥 Action triggered for: {gesture}")
-#     if gesture == "open_palm":
-#         print("💬 Starting conversation...")
-#     elif gesture == "topic_1":
-#         print("☁️ Topic 1: Weather, News")
-#     elif gesture == "topic_2":
-#         print("🍳 Topic 2: Cooking Tips")
-#     elif gesture == "topic_3":
-#         print("📖 Topic 3: Stories")
-#     elif gesture == "topic_4":
-#         print("🎉 Topic 4: Fun Talking")
-#     elif gesture == "closed_fist":
-#         print("🛑 Exiting gesture mode.")
+# Create an instance of the recognizer
 
-# # Create an instance of the recognizer
-# gr = GestureRecognizer()
+gr = GestureRecognizer()
 
-# print(gr)
-# # Start recognition
-# gr.detect_gestures(handle_gesture)
+gr.detect_gestures(handle_gesture)
