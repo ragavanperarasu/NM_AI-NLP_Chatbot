@@ -1,0 +1,82 @@
+[
+  {
+    "product_id": 1001,
+    "product_name": "Samsung Galaxy M14 Smartphone",
+    "price": 12999,
+    "category": "Smartphone",
+    "made_in": "India",
+    "spec": "6.6'' Display, 6000mAh Battery, 50MP Camera"
+  },
+  {
+    "product_id": 1002,
+    "product_name": "iPhone 13 Smartphone",
+    "price": 59999,
+    "category": "Smartphone",
+    "made_in": "China",
+    "spec": "6.1'' Display, A15 Chip, 12MP Dual Camera"
+  },
+  {
+    "product_id": 1003,
+    "product_name": "Boat Airdopes 141",
+    "price": 1299,
+    "category": "Audio",
+    "made_in": "India",
+    "spec": "42H Playtime, ENx Tech, Bluetooth v5.1"
+  },
+  {
+    "product_id": 1004,
+    "product_name": "Dell Inspiron 15",
+    "price": 45999,
+    "category": "Laptop",
+    "made_in": "China",
+    "spec": "15.6'' FHD, i5 11th Gen, 8GB RAM, 512GB SSD"
+  },
+  {
+    "product_id": 1005,
+    "product_name": "Sony WH-CH520",
+    "price": 3990,
+    "category": "Audio",
+    "made_in": "Malaysia",
+    "spec": "50H Battery, Bluetooth, Mic, Type-C"
+  },
+  {
+    "product_id": 1006,
+    "product_name": "OnePlus Nord CE 3 Lite",
+    "price": 19999,
+    "category": "Smartphone",
+    "made_in": "India",
+    "spec": "6.72'' LCD, Snapdragon 695, 108MP Camera"
+  },
+  {
+    "product_id": 1007,
+    "product_name": "HP Pavilion x360",
+    "price": 64999,
+    "category": "Laptop",
+    "made_in": "USA",
+    "spec": "14'' Touchscreen, i5 13th Gen, 16GB RAM"
+  },
+  {
+    "product_id": 1008,
+    "product_name": "Noise ColorFit Pulse",
+    "price": 999,
+    "category": "Smartwatch",
+    "made_in": "India",
+    "spec": "1.4'' Display, 10-day Battery, Heart Rate Monitor"
+  },
+  {
+    "product_id": 1009,
+    "product_name": "Realme Narzo 60",
+    "price": 15999,
+    "category": "Smartphone",
+    "made_in": "India",
+    "spec": "Dimensity 6020, 64MP Camera, 90Hz AMOLED"
+  },
+  {
+    "product_id": 1010,
+    "product_name": "Redmi Note 13",
+    "price": 17999,
+    "category": "Smartphone",
+    "made_in": "China",
+    "spec": "120Hz AMOLED, Snapdragon 685, 5000mAh"
+  }
+]
