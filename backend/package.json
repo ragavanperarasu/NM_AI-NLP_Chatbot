@@ -12,6 +12,8 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^5.1.0",
-    "node-fetch": "^3.3.2"
+    "mongodb": "^6.16.0",
+    "node-fetch": "^3.3.2",
+    "string-similarity": "^4.0.4"
   }
 }
