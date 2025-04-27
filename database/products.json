@@ -78,5 +78,86 @@
     "category": "Smartphone",
     "made_in": "China",
     "spec": "120Hz AMOLED, Snapdragon 685, 5000mAh"
-  }
+  },
+  {
+    "product_id": 1011,
+    "product_name": "Canon EOS R6 Mark II",
+    "price": 150000,
+    "category": "Camera",
+    "made_in": "India",
+    "spec": "4k resolution, 30 fps burst shooting, mirrorless"
+  },
+  {
+    "product_id": 1012,
+    "product_name": "Fujiflim X-T50",
+    "price": 167500,
+    "category": "Camera",
+    "made_in": "China",
+    "spec": "4k resolution, 45 fps, mirrorless"
+  },
+  {
+    "product_id": 1013,
+    "product_name": "HP 64 GB micro SD card",
+    "price": 509,
+    "category": "Memory cards",
+    "made_in": "China",
+    "spec": "64 GB, 190 MB/s Read, 130 MB/s Write"
+  },
+  {
+    "product_id": 1014,
+    "product_name": "Sandisk E61 portable harddisk",
+    "price": 10500,
+    "category": "hardisk",
+    "made_in": "China",
+    "spec": "1 TB, portable, C-Type port"
+  },
+  {
+    "product_id": 1015,
+    "product_name": "Crucial BX500 240 GB internal SSD",
+    "price": 1,599,
+    "category": "SSD",
+    "made_in": "China",
+    "spec": "240 GB, SATA, internal"
+  },
+  {
+    "product_id": 1016,
+    "product_name": "Samsung !6 GB DDR4 RAM",
+    "price": 5,379,
+    "category": "RAM",
+    "made_in": "China",
+    "spec": "16 GB, DD4, 3200MHz clock"
+  },
+  {
+    "product_id": 1017,
+    "product_name": "Gigabyte GeForce RTX 4060",
+    "price": 30499,
+    "category": "GPU",
+    "made_in": "China",
+    "spec": "8 GB, 3X windfans, Gddr4"
+  },
+  {
+    "product_id": 1018,
+    "product_name": "AMD Ryzen Threadrippr Pro 7995Wx",
+    "price": 1113919,
+    "category": "CPU",
+    "made_in": "China",
+    "spec": "96-Core, 192-Threads"
+  },
+  {
+    "product_id": 1019,
+    "product_name": "Logitech M221 Wireless Mouse",
+    "price": 799,
+    "category": "Mouse",
+    "made_in": "China",
+    "spec": "2.4 GHz & BT 5.3 dual Battery"
+  },
+  {
+    "product_id": 1020,
+    "product_name": "MageGee Gaming keyboard",
+    "price": 2249,
+    "category": "keyboard",
+    "made_in": "China",
+    "spec": "Wired, mechanical, noiseless"
+  },
+  
 ]
