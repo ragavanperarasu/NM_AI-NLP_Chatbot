@@ -239,5 +239,85 @@
     "made_in": "India",
     "prop": "8 packs, net weight 250 g"
   },
+    {
+    "product_id": 1031,
+    "product_name": "Dairy Milk silk",
+    "price": 250,
+    "category": "food",
+    "made_in": "India",
+    "prop": "Net weight 100 g"
+  },
+    {
+    "product_id": 1032,
+    "product_name": "King size Note",
+    "price": 45,
+    "category": "stationary",
+    "made_in": "India",
+    "prop": "150 pages, ruled"
+  },
+    {
+    "product_id": 1033,
+    "product_name": "King size Note",
+    "price": 45,
+    "category": "stationary",
+    "made_in": "India",
+    "prop": "150 pages, unruled"
+  },
+    {
+    "product_id": 1034,
+    "product_name": "Water Bottle 1  litre",
+    "price": 90,
+    "category": "Water Bottles",
+    "made_in": "India",
+    "prop": "1 litre capacity,plastic"
+  },
+    {
+    "product_id": 1035,
+    "product_name": "shirt XL",
+    "price": 218,
+    "category": "casuals",
+    "made_in": "India",
+    "prop": "XL, red"
+  },
+    {
+    "product_id": 1036,
+    "product_name": "W Vita Enriched Eye Crayon",
+    "price": 520,
+    "category": "cosmetics",
+    "made_in": "India",
+    "prop": "Balck, 50 g "
+  },
+    {
+    "product_id": 1037,
+    "product_name": "W Vita Nail enamel",
+    "price": 199,
+    "category": "cosmetics",
+    "made_in": "India",
+    "prop": "red, 20 ml"
+  },
+    {
+    "product_id": 1038,
+    "product_name": "fogg master",
+    "price": 399,
+    "category": "perfumes",
+    "made_in": "India",
+    "prop": "gasless, 100g"
+  },
+    {
+    "product_id": 1039,
+    "product_name": "Engage marine blue",
+    "price": 218,
+    "category": "perfumes",
+    "made_in": "India",
+    "prop": "liquid spray, 100 g"
+  },
+    {
+    "product_id": 1040,
+    "product_name": "play station 5",
+    "price": 49999,
+    "category": "console",
+    "made_in": "USA",
+    "prop": "1 TB, anti-cheat"
+  },
   
 ]
