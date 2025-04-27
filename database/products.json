@@ -319,5 +319,85 @@
     "made_in": "USA",
     "prop": "1 TB, anti-cheat"
   },
+  {
+    "product_id": 1041,
+    "product_name": "Kurkure",
+    "price": 30,
+    "category": "snack",
+    "made_in": "India",
+    "prop": "30 g"
+  },
+  {
+    "product_id": 1042,
+    "product_name": "Lays",
+    "price": 30,
+    "category": "snack",
+    "made_in": "India",
+    "prop": "30 g"
+  },
+  {
+    "product_id": 1043,
+    "product_name": "Boost",
+    "price": 10,
+    "category": "snack",
+    "made_in": "India",
+    "prop": "10 g"
+  },
+  {
+    "product_id": 1044,
+    "product_name": "Milk bikis",
+    "price": 10,
+    "category": "biscuit",
+    "made_in": "India",
+    "prop": "30 g"
+  },
+  {
+    "product_id": 1045,
+    "product_name": "Marie gold",
+    "price": 30,
+    "category": "biscuit",
+    "made_in": "India",
+    "prop": "100 g"
+  },
+  {
+    "product_id": 1046,
+    "product_name": "Detol disinfectice liquid",
+    "price": 69,
+    "category": "sanitory",
+    "made_in": "China",
+    "prop": "150 g"
+  },
+  {
+    "product_id": 1047,
+    "product_name": "hand sanitizer",
+    "price": 49,
+    "category": "sanitory",
+    "made_in": "India",
+    "prop": "20 g"
+  },
+  {
+    "product_id": 1048,
+    "product_name": "Laptop bag 14 inch",
+    "price": 599,
+    "category": "Accesories",
+    "made_in": "USA",
+    "prop": "15 inch, tight fit"
+  },
+  {
+    "product_id": 1049,
+    "product_name": "Adapter 220 watts",
+    "price": 899,
+    "category": "Accesories",
+    "made_in": "China",
+    "prop": "220 watts"
+  },
+  {
+    "product_id": 1050,
+    "product_name": "USB c- type cable",
+    "price": 299,
+    "category": "Accesories",
+    "made_in": "China",
+    "prop": "1 meter, fast charging support"
+  },
   
 ]
