@@ -159,5 +159,85 @@
     "made_in": "China",
     "spec": "Wired, mechanical, noiseless"
   },
+  {
+    "product_id": 1021,
+    "product_name": "louis paris shirt (XL)",
+    "price": 2499,
+    "category": "formals",
+    "made_in": "London",
+    "material": "Cotton"
+  },
+  {
+    "product_id": 1022,
+    "product_name": "Allen Solly Men's t-shirt",
+    "price": 499,
+    "category": "t-shirts",
+    "made_in": "USA",
+    "material": "Cotton"
+  },
+  {
+    "product_id": 1023,
+    "product_name": "gym pant men-XL",
+    "price": 399,
+    "category": "casuals",
+    "made_in": "China",
+    "material": "Nylon"
+  },
+  {
+    "product_id": 1024,
+    "product_name": "Nike Air Froce 1 ",
+    "price": 2249,
+    "category": "Sports",
+    "made_in": "China",
+    "prop": "Light weight, no sweat, fulffy foot cushion"
+  },
+  {
+    "product_id": 1025,
+    "product_name": "puma running shoe",
+    "price": 1578,
+    "category": "Sports",
+    "made_in": "Britain",
+    "prop": "Light weight, no sweat, fulffy foot cushion"
+  },
+  {
+    "product_id": 1026,
+    "product_name": "Tied washing powder",
+    "price": 259,
+    "category": "Groceries",
+    "made_in": "India",
+    "weight": "200 g"
+  },
+  {
+    "product_id": 1027,
+    "product_name": "Rin Bar",
+    "price": 22,
+    "category": "Groceries",
+    "made_in": "India",
+    "weight": "26 g"
+  },
+  {
+    "product_id": 1028,
+    "product_name": "Play Station 1",
+    "price": 2000,
+    "category": "console",
+    "made_in": "USA",
+    "spec": "1 TB storage, pre-loaded games"
+  },
+  {
+    "product_id": 1029,
+    "product_name": "Nitndo switch",
+    "price": 25000,
+    "category": "console",
+    "made_in": "japan",
+    "spec": "OLED display, 60 fps lock"
+  },
+  {
+    "product_id": 1030,
+    "product_name": "Sunfeast Yippei 8 in 1 pack",
+    "price": 218,
+    "category": "food",
+    "made_in": "India",
+    "prop": "8 packs, net weight 250 g"
+  },
   
 ]
