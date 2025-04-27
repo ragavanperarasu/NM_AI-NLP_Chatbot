@@ -399,5 +399,125 @@
     "made_in": "China",
     "prop": "1 meter, fast charging support"
   },
+  {
+    "product_id": 1051,
+    "product_name": "Cotton pant",
+    "price": 299,
+    "category": "garments",
+    "made_in": "China",
+    "material": "Cotton"
+  },
+  {
+    "product_id": 1052,
+    "product_name": "HP 64 GB pen drive",
+    "price": 599,
+    "category": "Pen drive",
+    "made_in": "China",
+    "prop": "64 GB, 2MB read, 1 MB write"
+  },
+  {
+    "product_id": 1053,
+    "product_name": "USB B- type cable",
+    "price": 299,
+    "category": "Accesories",
+    "made_in": "China",
+    "prop": "1 meter, fast charging support"
+  },
+  {
+    "product_id": 1054,
+    "product_name": "Power Bank 5000 MAh",
+    "price": 699,
+    "category": "Power Bank",
+    "made_in": "China",
+    "prop": "5000 MAh, fast charging, 3 Type-A ports "
+  },
+  {
+    "product_id": 1055,
+    "product_name": "Kettle",
+    "price": 1499,
+    "category": "Home appliances",
+    "made_in": "China",
+    "prop": "1 litre capacity"
+  },
+  {
+    "product_id": 1056,
+    "product_name": "Micro wave oven",
+    "price": 4999,
+    "category": "Home appliances",
+    "made_in": "China",
+    "prop": "40 + modes, timer, built-in volatage regulator"
+  },
+  {
+    "product_id": 1057,
+    "product_name": "Gas Stove",
+    "price": 1299,
+    "category": "Home appliances",
+    "made_in": "China",
+    "prop": "2 burners"
+  },
+  {
+    "product_id": 1058,
+    "product_name": "Induction stove",
+    "price": 1699,
+    "category": "Home appliances",
+    "made_in": "China",
+    "prop": "Built-in timer, Digital dislay"
+  },
+  {
+    "product_id": 1059,
+    "product_name": "Eye shade black",
+    "price": 299,
+    "category": "Garments",
+    "made_in": "India",
+    "prop": "Black, photochromic"
+  },
+  {
+    "product_id": 1060,
+    "product_name": "Graphide pencil",
+    "price": 10,
+    "category": "stationary",
+    "made_in": "India",
+    "prop": "Long lasting, dark shade"
+  },
+  {
+    "product_id": 1061,
+    "product_name": "Mechanical Pencil",
+    "price": 20,
+    "category": "stationary",
+    "made_in": "India",
+    "prop": "dark shade, soft grip"
+  },
+  {
+    "product_id": 1062,
+    "product_name": "Ball point pen",
+    "price": 10,
+    "category": "Stationary",
+    "made_in": "India",
+    "prop": "Japnese ink technology, soft grip"
+  },
+  {
+    "product_id": 1063,
+    "product_name": "Room freshner",
+    "price": 299,
+    "category": "Home appliances",
+    "made_in": "China",
+    "prop": "Strong fresh odour, rich in smell"
+  },
+  {
+    "product_id": 1064,
+    "product_name": "Night Lamp",
+    "price": 699,
+    "category": "Electronics",
+    "made_in": "India",
+    "prop": "Digital display, USB c-type port, 3+ modes"
+  },
+  {
+    "product_id": 1065,
+    "product_name": "Smart watch strap Blue",
+    "price": 299,
+    "category": "Accesories",
+    "made_in": "China",
+    "prop": "Flexible strap, blue color"
+  },
   
 ]
