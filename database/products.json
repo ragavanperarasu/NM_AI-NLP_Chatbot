@@ -2409,36 +2409,237 @@
     "made_in": "India",
     "prop": "Round and soft buns"
   },
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-  
-]
-
+  {
+    "product_id": 1301,
+    "product_name": "shaving blade",
+    "price": 129,
+    "category": "Toiletries and personal care products",
+    "made_in": "India",
+    "prop": "Smooth glide for a nick-free shave"
+  },
+{
+    "product_id": 1302,
+    "product_name": "scrub",
+    "price": 15,
+    "category": "kitchen",
+    "made_in": "India",
+    "prop": "easy to hold, effective cleaning"
+  },
+{
+    "product_id": 1303,
+    "product_name": "Fish Oil",
+    "price": 299,
+    "category": "medicine",
+    "made_in": "India",
+    "prop": "Omega-3, fresh source"
+  },
+{
+    "product_id": 1304,
+    "product_name": "vitamin tablet",
+    "price": 156,
+    "category": "medicine",
+    "made_in": "India",
+    "prop": "high source of vitamin,"
+  },
+{
+    "product_id": 1305,
+    "product_name": "sebifin skin care cream",
+    "price": 198,
+    "category": "medicine",
+    "made_in": "India",
+    "prop": "harmless chemicals, 100 g"
+  },
+{
+    "product_id": 1306,
+    "product_name": "volini",
+    "price": 89,
+    "category": "medicine",
+    "made_in": "India",
+    "prop": "instant relief, any type muscle cramp"
+  },
+{
+    "product_id": 1307,
+    "product_name": "scrub",
+    "price": 15,
+    "category": "kitchen",
+    "made_in": "India",
+    "prop": "easy to hold, effective cleaning"
+  },
+{
+    "product_id": 1308,
+    "product_name": "Pedegiri",
+    "price": 399,
+    "category": "food",
+    "made_in": "India",
+    "prop": "High vitamins, hygenic"
+  },
+{
+    "product_id": 1309,
+    "product_name": "stylus",
+    "price": 599,
+    "category": "electronic",
+    "made_in": "India",
+    "prop": "fancy, smooth"
+  },
+{
+    "product_id": 1310,
+    "product_name": "coat suit",
+    "price": 4999,
+    "category": "costumes",
+    "made_in": "India",
+    "prop": "premium look, stylish"
+  },
+{
+    "product_id": 1311,
+    "product_name": "Hoodie XL",
+    "price": 499,
+    "category": "costumes",
+    "made_in": "India",
+    "prop": "XL, black"
+  },
+{
+    "product_id": 1312,
+    "product_name": "CD-R 700 MB ",
+    "price": 199,
+    "category": "storage",
+    "made_in": "China",
+    "prop": "portable, fast read and write"
+  },{
+    "product_id": 1313,
+    "product_name": "DVD-R 700 MB ",
+    "price": 299,
+    "category": "storage",
+    "made_in": "China",
+    "prop": "portable, fast read and write"
+  },
+{
+    "product_id": 1314,
+    "product_name": "CD-DVD player ",
+    "price": 499,
+    "category": "electronics",
+    "made_in": "China",
+    "prop": "portable, fast read and write"
+  },
+{
+    "product_id": 1315,
+    "product_name": "Blu-ray disc",
+    "price": 599,
+    "category": "storage",
+    "made_in": "China",
+    "prop": "portable, fast read and write"
+  },
+{
+    "product_id": 1316,
+    "product_name": "Air-Conditioner",
+    "price": 19000,
+    "category": "Home Appliances",
+    "made_in": "China",
+    "prop": "1 ton, high cool"
+  },
+{
+    "product_id": 1317,
+    "product_name": "Smart fridge",
+    "price": 56000,
+    "category": "Home Appliances",
+    "made_in": "China",
+    "prop": "energy saver, eco friendly, smart options"
+  },
+{
+    "product_id": 1318,
+    "product_name": "Eye liner",
+    "price": 199,
+    "category": "cosmetics",
+    "made_in": "India",
+    "prop": "Dark shade, long lasting"
+  },
+{
+    "product_id": 1320,
+    "product_name": "nail polish red",
+    "price": 59,
+    "category": "cosmetics",
+    "made_in": "India",
+    "prop": "bright shade, premium look"
+  },
+{
+    "product_id": 1321,
+    "product_name": "nail polish black",
+    "price": 59,
+    "category": "cosmetics",
+    "made_in": "India",
+    "prop": "bright shade, premium look"
+  },
+{
+    "product_id": 1322,
+    "product_name": "nail polish brown",
+    "price": 59,
+    "category": "cosmetics",
+    "made_in": "India",
+    "prop": "bright shade, premium look"
+  },
+{
+    "product_id": 1323,
+    "product_name": "nail polish remover",
+    "price": 59,
+    "category": "cosmetics",
+    "made_in": "India",
+    "prop": "easy to use, no harm to skin"
+  },
+{
+    "product_id": 1324,
+    "product_name": "nail polish red",
+    "price": 59,
+    "category": "cosmetics",
+    "made_in": "India",
+    "prop": "bright shade, premium look"
+  },
+{
+    "product_id": 1325,
+    "product_name": "Arduino Uno",
+    "price": 699,
+    "category": "IOT",
+    "made_in": "India",
+    "prop": "high performance, more pins"
+  },
+{
+    "product_id": 1326,
+    "product_name": "ESP 32",
+    "price": 799,
+    "category": "IOT",
+    "made_in": "India",
+    "prop": "better baud rate, better performance"
+  },
+{
+    "product_id": 1327,
+    "product_name": "Servo motor",
+    "price": 99,
+    "category": "IOT",
+    "made_in": "India",
+    "prop": "180 degree free rotation"
+  },
+{
+    "product_id": 1328,
+    "product_name": "Ultrasonic sensor",
+    "price": 78,
+    "category": "IOT",
+    "made_in": "India",
+    "prop": "less error, free from interference"
+  },
+{
+    "product_id": 1329,
+    "product_name": "WiFi module",
+    "price": 129,
+    "category": "IOT",
+    "made_in": "India",
+    "prop": "long range, better connectivity"
+  },
+{
+    "product_id": 1330,
+    "product_name": "Bluetooth module",
+    "price": 145,
+    "category": "IOT",
+    "made_in": "India",
+    "prop": "long range, better connectivity"
+  },
   
 
   
