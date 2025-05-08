@@ -2175,8 +2175,76 @@
     "price": 399,
     "category": "Toiletries and personal care products",
     "made_in": "India",
-    "prop": "Essenyial fot hygiene and comfort"
+    "prop": "Essenyial for hygiene and comfort"
   },
+  {
+    "product_id": 1272,
+    "product_name": "Garam Masala",
+    "price": 59,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "Heart of Indian cooking"
+  },
+   {
+    "product_id": 1273,
+    "product_name": "Curry powder",
+    "price": 89,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "Fusion of spice flavours,mild to hot"
+  },
+   {
+    "product_id": 1274,
+    "product_name": "Chaat Masala",
+    "price": 120,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "Tangy,Salty and spicy"
+  },
+   {
+    "product_id": 1275,
+    "product_name": "Tandoori Masala",
+    "price": 59,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "Smoky,spicy and grill-ready"
+  },
+   {
+    "product_id": 1276,
+    "product_name": "Sambhar powder",
+    "price": 50,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "spicy and peppery"
+  },
+   {
+    "product_id": 1277,
+    "product_name": "Biriyani Masala",
+    "price": 59,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "Aromatic and rich,layours your rice with flavour"
+  },
+   {
+    "product_id": 1272,
+    "product_name": "Garam Masala",
+    "price": 59,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "Heart of Indian cooking"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   
