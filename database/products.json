@@ -1319,6 +1319,54 @@
     "made_in": "China",
     "prop": "Large size, portable"
   },
+  {
+    "product_id": 1166,
+    "product_name": "Guitar",
+    "price": 499,
+    "category": "Musical instrument",
+    "made_in": "China",
+    "prop": "high quality build, strong string"
+  },
+  {
+    "product_id": 1167,
+    "product_name": "piano",
+    "price": 699,
+    "category": "Musical instrument",
+    "made_in": "USA",
+    "prop": "high quality build, many keys"
+  },
+  {
+    "product_id": 1168,
+    "product_name": "Violin",
+    "price": 699,
+    "category": "Musical instrument",
+    "made_in": "China",
+    "prop": "high quality wood, strong string"
+  },
+  {
+    "product_id": 1169,
+    "product_name": "Trumpet",
+    "price": 299,
+    "category": "Musical instrument",
+    "made_in": "India",
+    "prop": "light weight, portable"
+  },
+  {
+    "product_id": 1170,
+    "product_name": "Flute",
+    "price": 299,
+    "category": "Musical instrument",
+    "made_in": "China",
+    "prop": "right handed, velvet cover"
+  },
+  {
+    "product_id": 1171,
+    "product_name": "Stapler",
+    "price": 99,
+    "category": "Travelling",
+    "made_in": "China",
+    "prop": "Large size, portable"
+  },
 ]
 
   
