@@ -1415,6 +1415,30 @@
     "made_in": "India",
     "prop": "1 litre, fresh"
   },
+  {
+    "product_id": 1178,
+    "product_name": "Cheese 250 g",
+    "price": 299,
+    "category": "Dairy products",
+    "made_in": "India",
+    "prop": "250 g, fresh"
+  },
+  {
+    "product_id": 1179,
+    "product_name": "Paneer 250 g",
+    "price": 299,
+    "category": "Dairy products",
+    "made_in": "India",
+    "prop": "250 g, fresh"
+  },
+  {
+    "product_id": 1180,
+    "product_name": "Ghee 1 litre",
+    "price": 299,
+    "category": "Dairy products",
+    "made_in": "India",
+    "prop": "1 litre, fresh"
+  },
 ]
 
   
