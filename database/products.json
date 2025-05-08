@@ -1127,5 +1127,14 @@
     "made_in": "India",
     "prop": "rich odour, long lasting"
   },
+   {
+    "product_id": 1141,
+    "product_name": "Cashew nuts",
+    "price": 299,
+    "category": "Dry fruits and nuts",
+    "made_in": "India",
+    "prop": "crunchy healthy"
+  },
+  
   
 ]
