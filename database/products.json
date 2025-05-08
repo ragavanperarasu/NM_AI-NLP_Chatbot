@@ -2081,6 +2081,86 @@
     "made_in": "India",
     "prop": "Sharp and unique Design"
   },
+   {
+    "product_id": 1261,
+    "product_name": "Body wash",
+    "price": 199,
+    "category": "Toiletries and personal care products",
+    "made_in": "India",
+    "prop": "liquid luxury for silky smooth cleanse"
+  },
+   {
+    "product_id": 1262,
+    "product_name": "Shampoo",
+    "price": 199,
+    "category": "Toiletries and personal care products",
+    "made_in": "India",
+    "prop": "Nourishes your hair"
+  },
+   {
+    "product_id": 1263,
+    "product_name": "Conditioner",
+    "price": 99,
+    "category": "Toiletries and personal care products",
+    "made_in": "India",
+    "prop": "Fragnant and fresh"
+  },
+   {
+    "product_id": 1264,
+    "product_name": "Deodorant",
+    "price": 199,
+    "category": "Toiletries and personal care products",
+    "made_in": "India",
+    "prop": "Your daily defense against odor and sweat"
+  },
+   {
+    "product_id": 1265,
+    "product_name": "Body spray",
+    "price": 390,
+    "category": "Toiletries and personal care products",
+    "made_in": "India",
+    "prop": "A Spritz of scent for confidence all day"
+  },
+   {
+    "product_id": 1266,
+    "product_name": "Face wash",
+    "price": 89,
+    "category": "Toiletries and personal care products",
+    "made_in": "India",
+    "prop": "Gentle cleanser for glowing,fresh skin"
+  },
+   {
+    "product_id": 1267,
+    "product_name": "Moisturizer",
+    "price": 250,
+    "category": "Toiletries and personal care products",
+    "made_in": "India",
+    "prop": "Hydrating hug for dry,thirsty skin"
+  },
+   {
+    "product_id": 1268,
+    "product_name": "Sunscreen",
+    "price": 599,
+    "category": "Toiletries and personal care products",
+    "made_in": "India",
+    "prop": "Shield your skin from harsh UV rays"
+  },
+   {
+    "product_id": 1269,
+    "product_name": "Lip Balm",
+    "price": 190,
+    "category": "Toiletries and personal care products",
+    "made_in": "India",
+    "prop": "pocket friendly rescue for dry,chapped lips"
+  },
+   {
+    "product_id": 1270,
+    "product_name": "Shaving cream",
+    "price": 199,
+    "category": "Toiletries and personal care products",
+    "made_in": "India",
+    "prop": "Smooth glide for a nick-free shave"
+  },
 
 
   
