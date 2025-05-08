@@ -806,5 +806,166 @@
     "category": "Tools",
     "made_in": "India",
     "prop": "multi-pin,light weight"
-  }
+  },
+  {
+    "product_id": 1101,
+    "product_name": "Spanner 12-14",
+    "price": 49,
+    "category": "Tools",
+    "made_in": "India",
+    "prop": "light weight"
+  },
+  {
+    "product_id": 1102,
+    "product_name": "Cutting Plier",
+    "price": 202,
+    "category": "Tools",
+    "made_in": "India",
+    "prop": "multi-purpose, light weight"
+  },
+  {
+    "product_id": 1103,
+    "product_name": "hammer",
+    "price": 129,
+    "category": "Tools",
+    "made_in": "India",
+    "prop": "Strong, light weight"
+  },
+  {
+    "product_id": 1104,
+    "product_name": "tester",
+    "price": 50,
+    "category": "Tools",
+    "made_in": "India",
+    "prop": "light weight"
+  },
+  {
+    "product_id": 1105,
+    "product_name": "nail",
+    "price": 99,
+    "category": "Tools",
+    "made_in": "India",
+    "prop": "sharp, stainless steel"
+  },
+  {
+    "product_id": 1106,
+    "product_name": "axe",
+    "price": 599,
+    "category": "Tools",
+    "made_in": "India",
+    "prop": "light weight"
+  },
+  {
+    "product_id": 1107,
+    "product_name": "driller",
+    "price": 699,
+    "category": "Tools",
+    "made_in": "India",
+    "prop": "multi-pin,light weight"
+  },
+  {
+    "product_id": 1108,
+    "product_name": "gloves",
+    "price": 99,
+    "category": "costumes",
+    "made_in": "India",
+    "prop": "black"
+  },
+  {
+    "product_id": 1109,
+    "product_name": "2-pin Socket",
+    "price": 99,
+    "category": "Electrical",
+    "made_in": "China",
+    "prop": "high resistance, durable, safe"
+  },
+  {
+    "product_id": 1110,
+    "product_name": "3-pin Socket",
+    "price": 99,
+    "category": "Electrical",
+    "made_in": "India",
+    "prop": "high resistance, durable, safe"
+  },
+  {
+    "product_id": 1111,
+    "product_name": "Copper Wire",
+    "price": 129,
+    "category": "Electrical",
+    "made_in": "India",
+    "prop": "low resistance, good conductor"
+  },
+  {
+    "product_id": 1112,
+    "product_name": "power convertor",
+    "price": 199,
+    "category": "Electrical",
+    "made_in": "India",
+    "prop": "Durable, can convert upto 120 volts"
+  },
+{
+    "product_id": 1113,
+    "product_name": "DC Battery",
+    "price": 199,
+    "category": "Electrical",
+    "made_in": "India",
+    "prop": "9 volts, rechargeble"
+  },
+  {
+    "product_id": 1114,
+    "product_name": "Basket Ball",
+    "price": 199,
+    "category": "Sports",
+    "made_in": "India",
+    "prop": "Durable, high quality material"
+  },
+  {
+    "product_id": 1115,
+    "product_name": "Volley Ball",
+    "price": 299,
+    "category": "Sports",
+    "made_in": "India",
+    "prop": "Durable, high quality material"
+  },
+{
+    "product_id": 1116,
+    "product_name": "Hair Dryer",
+    "price": 599,
+    "category": "Electrical",
+    "made_in": "India",
+    "prop": "Durable, can convert upto 120 volts"
+  },
+{
+    "product_id": 1117,
+    "product_name": "Remote Car",
+    "price": 299,
+    "category": "Toys",
+    "made_in": "India",
+    "prop": "Rechargeble battery, multi-directional remote"
+  },
+{
+    "product_id": 1118,
+    "product_name": "Lego Blocks",
+    "price": 899,
+    "category": "Toys",
+    "made_in": "India",
+    "prop": "Creative, Colorful blocks"
+  },
+  {
+    "product_id": 1119,
+    "product_name": "Krotos Toy",
+    "price": 999,
+    "category": "Toys",
+    "made_in": "India",
+    "prop": "Unbreakable, fancy"
+  },
+  {
+    "product_id": 1120,
+    "product_name": "X-Box",
+    "price": 39000,
+    "category": "console",
+    "made_in": "USA",
+    "prop": "Powerful CPU, 1 TB storage, exclusive games"
+  },
+
 ]
