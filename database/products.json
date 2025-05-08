@@ -1568,14 +1568,46 @@
     "prop": "Royal King Iron rich dates"
   },
   {
-    "product_id": 119,
+    "product_id": 1197,
     "product_name": "Olive oil",
     "price": 300,
     "category": "Condiments and spices",
     "made_in": "California",
     "prop": "anti-oxidant and anti-inflammatory"
   },
-]
+   {
+    "product_id": 1198,
+    "product_name": "Himalayan Pink Salt",
+    "price": 190,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "Rich in potassium and magnesium"
+  },
+   {
+    "product_id": 1199,
+    "product_name": "Regular crystal salt",
+    "price": 90,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "Enhances flavour to your dish!!"
+  },
+  {
+    "product_id": 1200,
+    "product_name": "Kosher salt",
+    "price": 290,
+    "category": "Condiments and spices",
+    "made_in": "Brazil",
+    "prop": Chef's favourite!!"
+  },
+  {
+    "product_id": 1201,
+    "product_name": "Epsom Salt",
+    "price": 165,
+    "category": "personal care products",
+    "made_in": "USA",
+    "prop": "Not for food but a bathing agent to detox skin!!"
+  },
+  
 
   
 ]
