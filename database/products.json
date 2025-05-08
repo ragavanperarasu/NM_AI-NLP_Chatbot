@@ -1705,7 +1705,7 @@
     "prop": "best in healthy frying"
   },
    {
-    "product_id": 1200,
+    "product_id": 1214,
     "product_name": "Kosher salt",
     "price": 290,
     "category": "Condiments and spices",
@@ -1713,7 +1713,7 @@
     "prop": "Chef's favourite!!"
   },
   {
-    "product_id": 1201,
+    "product_id": 1215,
     "product_name": "Epsom Salt",
     "price": 165,
     "category": "personal care products",
@@ -1721,7 +1721,7 @@
     "prop": "Not for food but a bathing agent to detox skin!!"
   },
    {
-    "product_id": 1202,
+    "product_id": 1216,
     "product_name": " White Vinegar",
     "price": 199,
     "category": "Condiments and spices",
@@ -1729,7 +1729,7 @@
     "prop": "perfect for pickling!!"
   },
   {
-    "product_id": 1203,
+    "product_id": 1217,
     "product_name": " Apple Cider Vinegar",
     "price": 150,
     "category": "Condiments and spices",
