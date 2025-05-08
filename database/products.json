@@ -1311,8 +1311,14 @@
     "made_in": "India",
     "prop": "crunchy healthy"
   },
+  {
+    "product_id": 1165,
+    "product_name": "Briefcase large size",
+    "price": 499,
+    "category": "Travelling",
+    "made_in": "China",
+    "prop": "Large size, portable"
+  },
 ]
 
   
-  
-]
