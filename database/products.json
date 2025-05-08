@@ -1962,14 +1962,44 @@
   },
   {
     "product_id": 1246,
-    "product_name": " soap",
-    "price": 99,
+    "product_name": "Antibacterial soap",
+    "price": 89,
     "category": "Toiletries and personal care products",
     "made_in": "India",
-    "prop": "Washes dirt and worries away!"
+    "prop": "Germ fighting formula for extra hygiene!"
   },
-  
-  
+  {
+    "product_id": 1247,
+    "product_name": "herbal soap",
+    "price": 199,
+    "category": "Toiletries and personal care products",
+    "made_in": "India",
+    "prop": "Nature packed with neem and aloe goodness"
+  },
+  {
+    "product_id": 1248,
+    "product_name": "Charcoal soap",
+    "price": 249,
+    "category": "Toiletries and personal care products",
+    "made_in": "India",
+    "prop": "pulls out dirt like magnet!!"
+  },
+  {
+    "product_id": 1249,
+    "product_name": "Baby soap",
+    "price": 399,
+    "category": "Toiletries and personal care products",
+    "made_in": "India",
+    "prop": "Gentle for delicate skin"
+  },
+  {
+    "product_id": 1250,
+    "product_name": "Scented/perfumed soap",
+    "price": 199,
+    "category": "Toiletries and personal care products",
+    "made_in": "India",
+    "prop": "Fragnant and fresh"
+  },
   
   
   
