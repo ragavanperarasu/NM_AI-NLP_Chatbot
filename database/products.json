@@ -1647,7 +1647,86 @@
     "made_in": "India",
     "prop": "perfect for salads and glazes!"
   },
-  
+   {
+    "product_id": 1207,
+    "product_name": "Canola oil",
+    "price": 199,
+    "category": "Condiments and spices",
+    "made_in": "Brazil",
+    "prop": "light and budget friendly for everyday cooking!"
+  },
+   {
+    "product_id": 1208,
+    "product_name": "Sunflower oil",
+    "price": 299,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "Rich in Vitamin-E!"
+  },
+   {
+    "product_id": 1209,
+    "product_name": "Coconut oil",
+    "price": 99,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "Tropical and aromatic!"
+  },
+   {
+    "product_id": 1210,
+    "product_name": "Sesame oil",
+    "price": 249,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "Nutty and bold,adds magic to Asian dishes!"
+  },
+   {
+    "product_id": 1211,
+    "product_name": "Mustard oil",
+    "price": 299,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "Pungent and spicy!"
+  },
+   {
+    "product_id": 1212,
+    "product_name": "Groundnut oil",
+    "price": 499,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "High heat friendly!"
+  },
+   {
+    "product_id": 1213,
+    "product_name": "Soybean oil",
+    "price": 399,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "condiment in stir fried foods!"
+  },
+   {
+    "product_id": 1214,
+    "product_name": "Avocado oil",
+    "price": 499,
+    "category": "Condiments and spices",
+    "made_in": "Chicago",
+    "prop": "perfect for dressings and grilling"
+  },
+   {
+    "product_id": 1215,
+    "product_name": "Ghee",
+    "price": 249,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "rich in health and flavour"
+  },
+   {
+    "product_id": 1216,
+    "product_name": "Rice Bran Oil",
+    "price": 199,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "best in healthy frying"
+  },
   
 
   
