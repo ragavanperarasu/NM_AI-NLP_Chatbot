@@ -519,4 +519,292 @@
     "made_in": "China",
     "prop": "Flexible strap, blue color"
   },
-  ]
+  {
+    "product_id": 1066,
+    "product_name": "Nivya Face Wash",
+    "price": 135,
+    "category": "cosmetics",
+    "made_in": "America",
+    "prop": "All in one, charcol"
+  },
+  {
+    "product_id": 1067,
+    "product_name": "Pain Balm",
+    "price": 48,
+    "category": "Medicine",
+    "made_in": "India",
+    "prop": "Instant relieve, all pain recovery"
+  },
+  {
+    "product_id": 1067,
+    "product_name": "Paracetamol",
+    "price": 8,
+    "category": "Medicine",
+    "made_in": "India",
+    "prop": "Fever, Cold"
+  },
+  {
+    "product_id": 1068,
+    "product_name": "Rubics Cube 6 x 6",
+    "price": 199,
+    "category": "Sports",
+    "made_in": "India",
+    "prop": "4 colors, 6 x 6"
+  },
+  {
+    "product_id": 1069,
+    "product_name": "Small Mirror",
+    "price": 50,
+    "category": "Home appliances",
+    "made_in": "China",
+    "prop": "Clear, highly reflective"
+  },
+  {
+    "product_id": 1070,
+    "product_name": "Theory of computation by Vijay kumar",
+    "price": 99,
+    "category": "Education",
+    "made_in": "India",
+    "prop": "4 th edition, all comcepts covered"
+  },
+  {
+    "product_id": 1071,
+    "product_name": "The design and analysis of algorithm",
+    "price": 129,
+    "category": "Education",
+    "made_in": "India",
+    "prop": "3 rd edition, all concepts covered"
+  },
+  {
+    "product_id": 1072,
+    "product_name": "LED light",
+    "price": 149,
+    "category": "Home appliances",
+    "made_in": "India",
+    "prop": "Bright, Long durable"
+  },
+  {
+    "product_id": 1073,
+    "product_name": "WiFi Modem",
+    "price": 599,
+    "category": "Electronics",
+    "made_in": "China",
+    "prop": "Long distance coverage, High strength"
+  },
+  {
+    "product_id": 1074,
+    "product_name": "Bluetooth Modem",
+    "price": 499,
+    "category": "Electronics",
+    "made_in": "China",
+    "prop": "Lomg distance coverage, High strength"
+  },
+  {
+    "product_id": 1075,
+    "product_name": "Slippers-blue color",
+    "price": 139,
+    "category": "Costumes",
+    "made_in": "India",
+    "prop": "Smooth, high grip"
+  },
+  {
+    "product_id": 1076,
+    "product_name": "Kerchief nandu brand",
+    "price": 49,
+    "category": "Costumes",
+    "made_in": "India",
+    "prop": "Cotton, blue color"
+  },
+  {
+    "product_id": 1077,
+    "product_name": "Slate",
+    "price": 29,
+    "category": "Education",
+    "made_in": "India",
+    "prop": "Long lasting, smooth surface"
+  },
+  {
+    "product_id": 1078,
+    "product_name": "Black Board Large",
+    "price": 159,
+    "category": "Education",
+    "made_in": "China",
+    "prop": "Smooth surface, long lasting"
+  },
+  {
+    "product_id": 1079,
+    "product_name": "Epson Projector",
+    "price": 1499,
+    "category": "Education",
+    "made_in": "China",
+    "prop": "Easy to configure, Remote control"
+  },
+  {
+    "product_id": 1080,
+    "product_name": "Epson printer",
+    "price": 1399,
+    "category": "Education",
+    "made_in": "China",
+    "prop": "Easy to configure, controlled through mobile"
+  },
+  {
+    "product_id": 1081,
+    "product_name": "High Flyer Drone",
+    "price": 1699,
+    "category": "Electronics",
+    "made_in": "China",
+    "prop": "Foldable, Rechargable"
+  },
+  {
+    "product_id": 1082,
+    "product_name": "Coke 500 ml",
+    "price": 45,
+    "category": "Beverages",
+    "made_in": "India",
+    "prop": "sweet, gaseous"
+  },
+  {
+    "product_id": 1083,
+    "product_name": "Fanta",
+    "price": 45,
+    "category": "Beverages",
+    "made_in": "India",
+    "prop": "Sweet, Gaseous"
+  },
+  {
+    "product_id": 1084,
+    "product_name": "Pepsi",
+    "price": 45,
+    "category": "Beverages",
+    "made_in": "India",
+    "prop": "Sweet, Gaseous"
+  },
+  {
+    "product_id": 1085,
+    "product_name": "Bovonto",
+    "price": 45,
+    "category": "Beverages",
+    "made_in": "India",
+    "prop": "Sweet"
+  },
+  {
+    "product_id": 1086,
+    "product_name": "Kinfe",
+    "price": 89,
+    "category": "Home appliances",
+    "made_in": "India",
+    "prop": "Sharp, multi-purpose"
+  },
+  {
+    "product_id": 1087,
+    "product_name": "Bracelet",
+    "price": 129,
+    "category": "cosmetics",
+    "made_in": "India",
+    "prop": "Shining, stainless steel"
+  },
+  {
+    "product_id": 1088,
+    "product_name": "Nail Cutter",
+    "price": 39,
+    "category": "cosmetics",
+    "made_in": "India",
+    "prop": "Sharp, portable"
+  },
+  {
+    "product_id": 1089,
+    "product_name": "Bucket",
+    "price": 39,
+    "category": "Cleaning",
+    "made_in": "America",
+    "prop": "All in one, charcol"
+  },
+  {
+    "product_id": 1090,
+    "product_name": "Cooking oil",
+    "price": 189,
+    "category": "Cooking",
+    "made_in": "India",
+    "prop": "1 litre, highly refinded"
+  },
+  {
+    "product_id": 1091,
+    "product_name": "Mop",
+    "price": 129,
+    "category": "Cleaning",
+    "made_in": "India",
+    "prop": "Long lasting, effective cleaning"
+  },
+  {
+    "product_id": 1092,
+    "product_name": "Vaccum Cleaner",
+    "price": 2999,
+    "category": "Cleaning",
+    "made_in": "India",
+    "prop": "effective cleaning, low voltage, rechargeble"
+  },
+  {
+    "product_id": 1093,
+    "product_name": "Lizol",
+    "price": 79,
+    "category": "Cleaning",
+    "made_in": "India",
+    "prop": "fresh odour, floor cleaner"
+  },
+  {
+    "product_id": 1094,
+    "product_name": "Hanger",
+    "price": 129,
+    "category": "Home appliances",
+    "made_in": "India",
+    "prop": "Strong, elastic"
+  },
+  {
+    "product_id": 1095,
+    "product_name": "Wall Paint",
+    "price": 599,
+    "category": "Decoration",
+    "made_in": "India",
+    "prop": "Bright, long lasting"
+  },
+  {
+    "product_id": 1096,
+    "product_name": "Door Mat",
+    "price": 89,
+    "category": "Decoration",
+    "made_in": "India",
+    "prop": "Eye catching, colorful"
+  },
+  {
+    "product_id": 1097,
+    "product_name": "Metallic Tape",
+    "price": 199,
+    "category": "Kitchen",
+    "made_in": "India",
+    "prop": "All in one, charcol"
+  },
+  {
+    "product_id": 1098,
+    "product_name": "Plastic Tape",
+    "price": 89,
+    "category": "Kitchen",
+    "made_in": "India",
+    "prop": "All in one, charcol"
+  },
+  {
+    "product_id": 1099,
+    "product_name": "Ring",
+    "price": 59,
+    "category": "Costumes",
+    "made_in": "China",
+    "prop": "Shining, silver"
+  },
+  {
+    "product_id": 1100,
+    "product_name": "screwdriver",
+    "price": 99,
+    "category": "Tools",
+    "made_in": "India",
+    "prop": "multi-pin,light weight"
+  }
+]
