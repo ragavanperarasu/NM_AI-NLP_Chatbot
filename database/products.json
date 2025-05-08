@@ -1447,6 +1447,141 @@
     "made_in": "China",
     "prop": "Easy roller, multiple pins, easy to clean"
   },
+  {
+    "product_id": 1182,
+    "product_name": "Raisins",
+    "price": 150,
+    "category": "Dry fruits and nuts",
+    "made_in": "Brazil",
+    "prop": "high fiber snack to munch on!! "
+  },
+  {
+    "product_id": 1183,
+    "product_name": "Pista",
+    "price":390,
+    "category": "Dry fruits and nuts",
+    "made_in": "India",
+    "prop": "Go nuts, go healthy!"
+  },
+  {
+    "product_id": 1184,
+    "product_name": "Apricots",
+    "price": 199,
+    "category": "Dry fruits and nuts",
+    "made_in": "Canada",
+    "prop": "adds a fruity touch to your day!"
+  },
+  {
+    "product_id": 1185,
+    "product_name": "walnuts",
+    "price": 299,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "Snack smart, stay sharp"
+  },
+  {
+    "product_id": 1186,
+    "product_name": "Foxnuts",
+    "price": 299,
+    "category": "Dry fruits and nuts",
+    "made_in": "India",
+    "prop": "crunchy healthy"
+  },
+  {
+    "product_id": 1187,
+    "product_name": "Prune",
+    "price": 149,
+    "category": "Dry fruits and nuts",
+    "made_in": "India",
+    "prop": "Prunes — the chewy, healthy snack"
+  },
+  {
+    "product_id": 1188,
+    "product_name": "Raisins",
+    "price": 150,
+    "category": "Dry fruits and nuts",
+    "made_in": "Brazil",
+    "prop": "high fiber snack to munch on!! "
+  },
+  {
+    "product_id": 1189,
+    "product_name": "Pista",
+    "price":390,
+    "category": "Dry fruits and nuts",
+    "made_in": "India",
+    "prop": "Go nuts, go healthy!"
+  },
+  {
+    "product_id": 1190,
+    "product_name": "Apricots",
+    "price": 199,
+    "category": "Dry fruits and nuts",
+    "made_in": "Canada",
+    "prop": "adds a fruity touch to your day!"
+  },
+  {
+    "product_id": 1191,
+    "product_name": "walnuts",
+    "price": 299,
+    "category": "Dry fruits and nuts",
+    "made_in": "India",
+    "prop": "Snack smart, stay sharp"
+  },
+  {
+    "product_id": 1192,
+    "product_name": "Foxnuts",
+    "price": 299,
+    "category": "Dry fruits and nuts",
+    "made_in": "India",
+    "prop": "crunchy healthy"
+  },
+  {
+    "product_id": 1193,
+    "product_name": "Prune",
+    "price": 149,
+    "category": "Dry fruits and nuts",
+    "made_in": "India",
+    "prop": "Prunes — the chewy, healthy snack"
+  },
+  {
+    "product_id": 1194,
+    "product_name": "Figs",
+    "price": 249,
+    "category": "Dry fruits and nuts",
+    "made_in": "India",
+    "prop": " rich in fiber and antioxidants"
+  },
+  {
+    "product_id": 1195,
+    "product_name": "Regular dates",
+    "price": 199,
+    "category": "Dry fruits and nuts",
+    "made_in": "India",
+    "prop": "healthy iron rich dates"
+  },
+  {
+    "product_id": 1196,
+    "product_name": "Dessert king dates",
+    "price": 499,
+    "category": "Dry fruits and nuts",
+    "made_in": "India",
+    "prop": "Royal King Iron rich dates"
+  },
+  {
+    "product_id": 119,
+    "product_name": "Olive oil",
+    "price": 300,
+    "category": "Condiments and spices",
+    "made_in": "California",
+    "prop": "anti-oxidant and anti-inflammatory"
+  },
+]
+
+  
+]
+
+  
+
 ]
 
   
