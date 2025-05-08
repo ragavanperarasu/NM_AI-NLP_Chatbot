@@ -967,5 +967,165 @@
     "made_in": "USA",
     "prop": "Powerful CPU, 1 TB storage, exclusive games"
   },
-
+  {
+    "product_id": 1121,
+    "product_name": "Wall Clock",
+    "price": 199,
+    "category": "Home Appliances",
+    "made_in": "India",
+    "prop": "12 hours, fancy"
+  },
+  {
+    "product_id": 1122,
+    "product_name": "Dumbbells 2 KG",
+    "price": 199,
+    "category": "Fitness",
+    "made_in": "USA",
+    "prop": "2 KG, rustless"
+  },
+  {
+    "product_id": 1123,
+    "product_name": "Protein Powder",
+    "price": 799,
+    "category": "Fitness",
+    "made_in": "India",
+    "prop": "High in protein, affordable"
+  },
+  {
+    "product_id": 1124,
+    "product_name": "Creatine",
+    "price": 799,
+    "category": "Fitness",
+    "made_in": "India",
+    "prop": "High in energy, affordable"
+  },
+  {
+    "product_id": 1125,
+    "product_name": "Mass Grainer",
+    "price": 499,
+    "category": "Fitness",
+    "made_in": "India",
+    "prop": "Highly effective, affordable"
+  },
+  {
+    "product_id": 1126,
+    "product_name": "Pull up bar",
+    "price": 299,
+    "category": "Fitness",
+    "made_in": "China",
+    "prop": "Strong, highly grip"
+  },
+  {
+    "product_id": 1127,
+    "product_name": "Hand grip",
+    "price": 199,
+    "category": "Fitness",
+    "made_in": "India",
+    "prop": "highly effective grip, easy to use"
+  },
+  {
+    "product_id": 1128,
+    "product_name": "Necklace Bronze",
+    "price": 399,
+    "category": "Garments",
+    "made_in": "India",
+    "prop": "Shining, rustless"
+  },
+  {
+    "product_id": 1129,
+    "product_name": "NeckLace Gold",
+    "price": 899,
+    "category": "Garments",
+    "made_in": "India",
+    "prop": "24-carrot, thick"
+  },
+  {
+    "product_id": 1130,
+    "product_name": "Necklace Silver",
+    "price": 399,
+    "category": "Garments",
+    "made_in": "India",
+    "prop": "Shining, rustless"
+  },
+  {
+    "product_id": 1131,
+    "product_name": "Bangles Gold",
+    "price": 899,
+    "category": "Garments",
+    "made_in": "India",
+    "prop": "Fancy, shining"
+  },
+  {
+    "product_id": 1132,
+    "product_name": "Bangles Silver",
+    "price": 599,
+    "category": "Garments",
+    "made_in": "India",
+    "prop": "Fancy, shining"
+  },
+  {
+    "product_id": 1133,
+    "product_name": "Bangles Bronze",
+    "price": 299,
+    "category": "Garments",
+    "made_in": "India",
+    "prop": "Fancy, shining"
+  },
+  {
+    "product_id": 1134,
+    "product_name": "Bril Ink blue",
+    "price": 123,
+    "category": "Education",
+    "made_in": "India",
+    "prop": "Royal blue, non-fading"
+  },
+  {
+    "product_id": 1135,
+    "product_name": "Bril Ink Black",
+    "price": 127,
+    "category": "Education",
+    "made_in": "India",
+    "prop": "pitch Black, non-fading"
+  },
+  {
+    "product_id": 1136,
+    "product_name": "Printer Ink",
+    "price": 1199,
+    "category": "Education",
+    "made_in": "India",
+    "prop": "Colorful, Bold colors"
+  },
+  {
+    "product_id": 1137,
+    "product_name": "2-Pin plug",
+    "price": 299,
+    "category": "Electrical",
+    "made_in": "India",
+    "prop": "high quality, safe"
+  },
+  {
+    "product_id": 1138,
+    "product_name": "Agar bathi lemon",
+    "price": 199,
+    "category": "incense stick",
+    "made_in": "India",
+    "prop": "rich odour, long lasting"
+  },
+  {
+    "product_id": 1139,
+    "product_name": "Agar bathi hibiscus",
+    "price": 199,
+    "category": "incense stick",
+    "made_in": "India",
+    "prop": "rich odour, long lasting"
+  },
+  {
+    "product_id": 1140,
+    "product_name": "Agar bathi sandalwood",
+    "price": 199,
+    "category": "incense stick",
+    "made_in": "India",
+    "prop": "rich odour, long lasting"
+  },
+  
 ]
