@@ -1363,9 +1363,57 @@
     "product_id": 1171,
     "product_name": "Stapler",
     "price": 99,
-    "category": "Travelling",
+    "category": "Stationary",
     "made_in": "China",
     "prop": "Large size, portable"
+  },
+  {
+    "product_id": 1172,
+    "product_name": "Stapler pin large",
+    "price": 45,
+    "category": "Stationary",
+    "made_in": "China",
+    "prop": "Large size, portable"
+  },
+  {
+    "product_id": 1173,
+    "product_name": "Sweater",
+    "price": 499,
+    "category": "costumes",
+    "made_in": "India",
+    "prop": "woolean material, high cold resistance"
+  },
+  {
+    "product_id": 1174,
+      "product_name": "Rain coat",
+    "price": 699,
+    "category": "costumes",
+    "made_in": "India",
+    "prop": "rain resistance,xl"
+  },
+  {
+    "product_id": 1175,
+    "product_name": "Milk 1 litre",
+    "price": 59,
+    "category": "Dairy Products",
+    "made_in": "India",
+    "prop": "1 litre, fresh"
+  },
+  {
+    "product_id": 1176,
+    "product_name": "Butter milk 1 litre",
+    "price": 79,
+    "category": "Dairy products",
+    "made_in": "India",
+    "prop": "1 litre, fresh"
+  },
+  {
+    "product_id": 1177,
+    "product_name": "Yogut 1 litre",
+    "price": 68,
+    "category": "Dairy Products",
+    "made_in": "India",
+    "prop": "1 litre, fresh"
   },
 ]
 
