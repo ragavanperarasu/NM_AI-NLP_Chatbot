@@ -2282,7 +2282,7 @@
     "prop": "Safety for your phone"
   },
   {
-    "product_id": 1284,
+    "product_id": 1285,
     "product_name": "Passport Holder",
     "price": 200,
     "category": "Travel products",
@@ -2290,7 +2290,7 @@
     "prop": "Sleek and safe for your ID essentials"
   },
   {
-    "product_id": 1285,
+    "product_id": 1286,
     "product_name": "Compression Bags",
     "price": 499,
     "category": "Travel products",
@@ -2298,13 +2298,94 @@
     "prop": "pack more with more space!!"
   },
   {
-    "product_id": 1286,
+    "product_id": 1287,
     "product_name": "First Aid Kit",
     "price": 349,
     "category": "Travel products",
     "made_in": "India",
     "prop": "Safety in a pouch for minor mishaps"
   },
+  {
+    "product_id": 1288,
+    "product_name": "Eye mask",
+    "price": 200,
+    "category": "Travel products",
+    "made_in": "India",
+    "prop": "Neck hugging comfort for naps on the go"
+  },
+  {
+    "product_id": 1289,
+    "product_name": "White Bread",
+    "price": 45,
+    "category": "Bakery Products",
+    "made_in": "India",
+    "prop": "Soft and Fluffy"
+  },
+  {
+    "product_id": 1290,
+    "product_name": "Whole Wheat Bread",
+    "price": 55,
+    "category": "Bakery Products",
+    "made_in": "India",
+    "prop": "Nutty and hearty,Fiber rich and Healthy"
+  },
+  {
+    "product_id": 1291,
+    "product_name": "Multigrain Bread",
+    "price": 65,
+    "category": "Bakery Products",
+    "made_in": "India",
+    "prop": "Packed with seeds and grains for crunch and nutrition"
+  },
+  {
+    "product_id": 1292,
+    "product_name": "Sourdough",
+    "price": 299,
+    "category": "Bakery Products",
+    "made_in": "India",
+    "prop": "Tangy,Crusty and fermented to perfection"
+  },
+  {
+    "product_id": 1293,
+    "product_name": "Baguette",
+    "price": 230,
+    "category": "Bakery Products",
+    "made_in": "India",
+    "prop": "Long,crisp Frech Loaf with a chewy bite"
+  },
+  {
+    "product_id": 1294,
+    "product_name": "Croissant",
+    "price": 220,
+    "category": "Bakery Products",
+    "made_in": "India",
+    "prop": "Buttery,flaky Frech pastry"
+  },
+   {
+    "product_id": 1295,
+    "product_name": "Muffins",
+    "price": 210,
+    "category": "Bakery Products",
+    "made_in": "India",
+    "prop": "Sweet and Savory dome-shaped delights"
+  },
+   {
+    "product_id": 1296,
+    "product_name": "",Donuts
+    "price": 150,
+    "category": "Bakery Products",
+    "made_in": "India",
+    "prop": "Fried,glazed rings of Joy"
+  },
+   {
+    "product_id": 1297,
+    "product_name": "Croissant",
+    "price": 220,
+    "category": "Bakery Products",
+    "made_in": "India",
+    "prop": "Buttery,flaky Frech pastry"
+  },
+  
   
 
 
