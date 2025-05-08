@@ -1704,6 +1704,235 @@
     "made_in": "India",
     "prop": "best in healthy frying"
   },
+   {
+    "product_id": 1200,
+    "product_name": "Kosher salt",
+    "price": 290,
+    "category": "Condiments and spices",
+    "made_in": "Brazil",
+    "prop": "Chef's favourite!!"
+  },
+  {
+    "product_id": 1201,
+    "product_name": "Epsom Salt",
+    "price": 165,
+    "category": "personal care products",
+    "made_in": "USA",
+    "prop": "Not for food but a bathing agent to detox skin!!"
+  },
+   {
+    "product_id": 1202,
+    "product_name": " White Vinegar",
+    "price": 199,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "perfect for pickling!!"
+  },
+  {
+    "product_id": 1203,
+    "product_name": " Apple Cider Vinegar",
+    "price": 150,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "Fruity and zesty!!"
+  },
+  {
+    "product_id": 1204,
+    "product_name": "Red Wine Vinegar",
+    "price": 200,
+    "category": "Condiments and spices",
+    "made_in": "Bolivia",
+    "prop": "bold and tangy!"
+  },
+  {
+    "product_id": 1205,
+    "product_name": "Rice Vinegar",
+    "price": 149,
+    "category": "Condiments and spices",
+    "made_in": "Japan",
+    "prop": "mild and goes perfect with sushi"
+  },
+  {
+    "product_id": 1206,
+    "product_name": "Balsamic Vinegar",
+    "price": 199,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "perfect for salads and glazes!"
+  },
+   {
+    "product_id": 1207,
+    "product_name": "Canola oil",
+    "price": 199,
+    "category": "Condiments and spices",
+    "made_in": "Brazil",
+    "prop": "light and budget friendly for everyday cooking!"
+  },
+   {
+    "product_id": 1208,
+    "product_name": "Sunflower oil",
+    "price": 299,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "Rich in Vitamin-E!"
+  },
+   {
+    "product_id": 1209,
+    "product_name": "Coconut oil",
+    "price": 99,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "Tropical and aromatic!"
+  },
+   {
+    "product_id": 1210,
+    "product_name": "Sesame oil",
+    "price": 249,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "Nutty and bold,adds magic to Asian dishes!"
+  },
+   {
+    "product_id": 1211,
+    "product_name": "Mustard oil",
+    "price": 299,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "Pungent and spicy!"
+  },
+   {
+    "product_id": 1212,
+    "product_name": "Groundnut oil",
+    "price": 499,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "High heat friendly!"
+  },
+   {
+    "product_id": 1213,
+    "product_name": "Soybean oil",
+    "price": 399,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "condiment in stir fried foods!"
+  },
+   {
+    "product_id": 1214,
+    "product_name": "Avocado oil",
+    "price": 499,
+    "category": "Condiments and spices",
+    "made_in": "Chicago",
+    "prop": "perfect for dressings and grilling"
+  },
+   {
+    "product_id": 1215,
+    "product_name": "Ghee",
+    "price": 249,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "rich in health and flavour"
+  },
+   {
+    "product_id": 1216,
+    "product_name": "Rice Bran Oil",
+    "price": 199,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "best in healthy frying"
+  },
+   {
+    "product_id": 1217,
+    "product_name": "Turmeric",
+    "price": 50,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "earthy,Anti-inflammatory condiment!"
+  },
+   {
+    "product_id": 1218,
+    "product_name": "Cumin",
+    "price": 49,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "Warm and nutty!"
+  },
+  {
+    "product_id": 1219,
+    "product_name": "coriander",
+    "price": 29,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "gentle spice kick!"
+  },
+  {
+    "product_id": 1220,
+    "product_name": "Black pepper",
+    "price": 49,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "King of everyday seasoning!"
+  },
+  {
+    "product_id": 1221,
+    "product_name": "Chilli powder",
+    "price": 69,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "Adds instant heat and colour"
+  },
+  {
+    "product_id": 1222,
+    "product_name": "Cloves",
+    "price": 79,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "tiny but powerful in flavour!"
+  },
+  {
+    "product_id": 1223,
+    "product_name": "Cinnamon",
+    "price": 149,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "Woody,sweet perfect for curries and desserts"
+  },
+  {
+    "product_id": 1224,
+    "product_name": "Cardamom",
+    "price": 149,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "A sweet spicy blend in every pod"
+  },
+  {
+    "product_id": 1225,
+    "product_name": "Nutmeg",
+    "price": 89,
+    "category": "Condiments and spices",
+    "made_in": "Cambodia",
+    "prop": "Warm and nutty!"
+  },
+  {
+    "product_id": 1226,
+    "product_name": "Bay leaf",
+    "price": 99,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "herbal,slow cooked flavour booster!"
+  },
+  
+  
+  
+  
+  
+  
+  
+
+  
+]
+
+  
+
   
 
   
