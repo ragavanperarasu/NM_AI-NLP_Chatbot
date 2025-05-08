@@ -2000,6 +2000,89 @@
     "made_in": "India",
     "prop": "Fragnant and fresh"
   },
+   
+     {
+    "product_id": 1251,
+    "product_name": "King Size bed",
+    "price": 9999,
+    "category": "Furniture",
+    "made_in": "India",
+    "prop": "Premium,Fluffi"
+  },
+    {
+    "product_id": 1252,
+    "product_name": "Chair",
+    "price": 1499,
+    "category": "Furniture",
+    "made_in": "India",
+    "prop": "Comfort"
+  },
+    {
+    "product_id": 1253,
+    "product_name": "Washing Machine",
+    "price": 14999,
+    "category": "Furniture",
+    "made_in": "India",
+    "prop": "Multiple modes, Energy Sever"
+  },
+    {
+    "product_id": 1254,
+    "product_name": "Dish Washer",
+    "price": 19999,
+    "category": "Furniture",
+    "made_in": "India",
+    "prop": "Stream wash,Easy to clean"
+  },
+    {
+    "product_id": 1255,
+    "product_name": "Sofa",
+    "price": 11999,
+    "category": "Furniture",
+    "made_in": "India",
+    "prop": "Premium,Fluffi,Durability"
+  },
+    {
+    "product_id": 1256,
+    "product_name": "Bean Bag",
+    "price": 9999,
+    "category": "Furniture",
+    "made_in": "India",
+    "prop": "Premium,Fluffi,"
+  },
+ {
+    "product_id": 1257,
+    "product_name": "tumbler 100ml",
+    "price": 99,
+    "category": "Kitchen",
+    "made_in": "India",
+    "prop": "Stainless Steel 100ml"
+  },
+ {
+    "product_id": 1258,
+    "product_name": "Plate",
+    "price": 150,
+    "category": "Kitchen",
+    "made_in": "India",
+    "prop": "Stainless Steel"
+  },
+ {
+    "product_id": 1259,
+    "product_name": "Spoon",
+    "price": 49,
+    "category": "Kitchen",
+    "made_in": "India",
+    "prop": "Unique Design"
+  },
+ {
+    "product_id": 1260,
+    "product_name": "Fork",
+    "price": 49,
+    "category": "Kitchen",
+    "made_in": "India",
+    "prop": "Sharp and unique Design"
+  },
+
+
   
   
   
