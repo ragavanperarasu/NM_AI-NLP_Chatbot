@@ -1497,27 +1497,27 @@
   },
   {
     "product_id": 1188,
-    "product_name": "Raisins",
+    "product_name": "cranberries",
     "price": 150,
     "category": "Dry fruits and nuts",
     "made_in": "Brazil",
-    "prop": "high fiber snack to munch on!! "
+    "prop": "great for baking!! "
   },
   {
     "product_id": 1189,
-    "product_name": "Pista",
+    "product_name": "cherries",
     "price":390,
     "category": "Dry fruits and nuts",
     "made_in": "India",
-    "prop": "Go nuts, go healthy!"
+    "prop": "burst of flavour in every bite!"
   },
   {
     "product_id": 1190,
-    "product_name": "Apricots",
+    "product_name": "dried chewy mango",
     "price": 199,
     "category": "Dry fruits and nuts",
     "made_in": "Canada",
-    "prop": "adds a fruity touch to your day!"
+    "prop": "naturally candy like!"
   },
   {
     "product_id": 1191,
@@ -1597,7 +1597,7 @@
     "price": 290,
     "category": "Condiments and spices",
     "made_in": "Brazil",
-    "prop": Chef's favourite!!"
+    "prop": "Chef's favourite!!"
   },
   {
     "product_id": 1201,
@@ -1607,13 +1607,50 @@
     "made_in": "USA",
     "prop": "Not for food but a bathing agent to detox skin!!"
   },
+   {
+    "product_id": 1202,
+    "product_name": " White Vinegar",
+    "price": 199,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "perfect for pickling!!"
+  },
+  {
+    "product_id": 1203,
+    "product_name": " Apple Cider Vinegar",
+    "price": 150,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "Fruity and zesty!!"
+  },
+  {
+    "product_id": 1204,
+    "product_name": "Red Wine Vinegar",
+    "price": 200,
+    "category": "Condiments and spices",
+    "made_in": "Bolivia",
+    "prop": "bold and tangy!"
+  },
+  {
+    "product_id": 1205,
+    "product_name": "Rice Vinegar",
+    "price": 149,
+    "category": "Condiments and spices",
+    "made_in": "Japan",
+    "prop": "mild and goes perfect with sushi"
+  },
+  {
+    "product_id": 1206,
+    "product_name": "Balsamic Vinegar",
+    "price": 199,
+    "category": "Condiments and spices",
+    "made_in": "India",
+    "prop": "perfect for salads and glazes!"
+  },
+  
   
 
   
-]
-
-  
-
 ]
 
   
