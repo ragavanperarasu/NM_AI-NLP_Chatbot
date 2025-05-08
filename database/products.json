@@ -2226,13 +2226,54 @@
     "prop": "Aromatic and rich,layours your rice with flavour"
   },
    {
-    "product_id": 1272,
-    "product_name": "Garam Masala",
-    "price": 59,
-    "category": "Condiments and spices",
+    "product_id": 1278,
+    "product_name": "Eye mask",
+    "price": 200,
+    "category": "Travel products",
     "made_in": "India",
-    "prop": "Heart of Indian cooking"
+    "prop": "Neck hugging comfort for naps on the go"
   },
+  {
+    "product_id": 1279,
+    "product_name": "Earplugs",
+    "price": 420,
+    "category": "Travel products",
+    "made_in": "USA",
+    "prop": "mute the noises,keep the peace"
+  },
+  {
+    "product_id": 1280,
+    "product_name": "Luggage",
+    "price": 2999,
+    "category": "Travel products",
+    "made_in": "Italy",
+    "prop": "Stylish storage on wheels"
+  },
+  {
+    "product_id": 1281,
+    "product_name": "Toiletry Bag",
+    "price": 1200,
+    "category": "Travel products",
+    "made_in": "USA",
+    "prop": "Grooming gear spill-free and sorted"
+  },
+  {
+    "product_id": 1282,
+    "product_name": "Hand sanitizers",
+    "price": 200,
+    "category": "Travel products",
+    "made_in": "India",
+    "prop": "Germ defense in your pocket"
+  },
+  {
+    "product_id": 1283,
+    "product_name": "Wet Wipes",
+    "price": 400,
+    "category": "Travel products",
+    "made_in": "USA",
+    "prop": "Quick cleanups on the move"
+  },
+  
 
 
 
