@@ -2273,6 +2273,38 @@
     "made_in": "USA",
     "prop": "Quick cleanups on the move"
   },
+  {
+    "product_id": 1284,
+    "product_name": "Power bank",
+    "price":2999,
+    "category": "Travel products",
+    "made_in": "India",
+    "prop": "Safety for your phone"
+  },
+  {
+    "product_id": 1284,
+    "product_name": "Passport Holder",
+    "price": 200,
+    "category": "Travel products",
+    "made_in": "India",
+    "prop": "Sleek and safe for your ID essentials"
+  },
+  {
+    "product_id": 1285,
+    "product_name": "Compression Bags",
+    "price": 499,
+    "category": "Travel products",
+    "made_in": "India",
+    "prop": "pack more with more space!!"
+  },
+  {
+    "product_id": 1286,
+    "product_name": "First Aid Kit",
+    "price": 349,
+    "category": "Travel products",
+    "made_in": "India",
+    "prop": "Safety in a pouch for minor mishaps"
+  },
   
 
 
