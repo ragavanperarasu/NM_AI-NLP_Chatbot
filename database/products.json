@@ -2871,16 +2871,9 @@
     "made_in": "India",
     "prop": "soldered pins"
   },
-  {
-    "product_id": 1330,
-    "product_name": "Relay module",
-    "price": 145,
-    "category": "IOT",
-    "made_in": "India",
-    "prop": "soldered pins"
-  },
+  
 {
-    "product_id": 1331,
+    "product_id": 1330,
     "product_name": "Humidity sensor",
     "price": 145,
     "category": "IOT",
@@ -2888,25 +2881,6 @@
     "prop": "high accuracy, high precision"
   },
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
-  
 ]
 
   
