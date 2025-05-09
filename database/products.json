@@ -2936,6 +2936,32 @@
     "made_in": "India",
     "prop": "Classic Tee for every occasion"
   },
+  {
+    "product_id": 1338,
+    "product_name": "Dumbbells",
+    "price": 899,
+    "category": "Health and Fitness",
+    "made_in": "USA",
+    "prop": "Compact power tools for strength Training"
+  },
+   {
+    "product_id": 1339,
+    "product_name": "Kettlebells",
+    "price": 999,
+    "category": "Health and Fitness",
+    "made_in": "USA",
+    "prop": "Perfect for home or gym workouts"
+  },
+   {
+    "product_id": 1340,
+    "product_name": "Yoga mats",
+    "price": 699,
+    "category": "Health and Fitness",
+    "made_in": "USA",
+    "prop": "Soft,Non slip mats for Comfy Yoga!!"
+  },
+  
+  
   
 
 ]
