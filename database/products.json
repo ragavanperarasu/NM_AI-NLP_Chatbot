@@ -3304,6 +3304,62 @@
     "made_in": "India",
     "prop": "Ideal for baking and frying!"
   },
+  {
+    "product_id": 1384,
+    "product_name":"Lentils",
+    "price": 199,
+    "category": "Bakery Products and  grains",
+    "made_in": "India",
+    "prop": "Protein rich Dal"
+  },
+  {
+    "product_id": 1385,
+    "product_name":"Chickpeas",
+    "price": 149,
+    "category": "Bakery Products and  grains",
+    "made_in": "India",
+    "prop": "Wholesome hearty meals with Chickpeas"
+  },
+  {
+    "product_id": 1386,
+    "product_name":"Biscuits",
+    "price": 49,
+    "category": "Bakery Products and  grains",
+    "made_in": "USA",
+    "prop": "perfecct for tea time!!"
+  },
+  {
+    "product_id": 1387,
+    "product_name":"Chips",
+    "price": 49,
+    "category": "Bakery Products and  grains",
+    "made_in": "India",
+    "prop": "Anytime munching!!"
+  },
+  {
+    "product_id": 1388,
+    "product_name":"Namkeen",
+    "price": 149,
+    "category": "Bakery Products and  grains",
+    "made_in": "India",
+    "prop": "Satisfies your crunchy cravings!!"
+  },
+  {
+    "product_id": 1389,
+    "product_name":"Ready to eat meals",
+    "price": 199,
+    "category": "Bakery Products and grains",
+    "made_in": "India",
+    "prop": "Just Heat and Eat"
+  },
+  {
+    "product_id": 1390,
+    "product_name":"Instant Soup Sachet",
+    "price": 99,
+    "category": "Bakery Products and  grains",
+    "made_in": "India",
+    "prop": "Slurp and Sip delight"
+  },
   
   
   
