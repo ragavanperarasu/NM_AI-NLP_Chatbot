@@ -3200,6 +3200,56 @@
     "made_in": "China",
     "prop": "Permanent marker for multiuse"
   },
+  {
+    "product_id": 1371,
+    "product_name": "Classic Dog Toy",
+    "price": 99,
+    "category": "Pet products",
+    "made_in": "China",
+    "prop": "Durable chew toy that can be stuffed with treats "
+  },
+  {
+    "product_id": 1372,
+    "product_name": "Dental Treats",
+    "price": 189,
+    "category": "Pet products",
+    "made_in": "India",
+    "prop": "Tasty treats designed to reduce plaque and tartar"
+  },
+  {
+    "product_id": 1373,
+    "product_name": "Cat Water Fountain 2.5L",
+    "price": 899,
+    "category": "Pet products",
+    "made_in": "USA",
+    "prop": "Encourages cats to drink more water with its quiet"
+  },
+  {
+    "product_id": 1374,
+    "product_name": "Tractive GPS Pet Tracker",
+    "price": 1299,
+    "category": "Pet products",
+    "made_in": "USA",
+    "prop": "Real-time location tracking and activity monitoring via a smartphone app."
+  },
+  {
+    "product_id": 1375,
+    "product_name": "Litter box",
+    "price": 999,
+    "category": "Pet products",
+    "made_in": "China",
+    "prop": "Self-cleaning litter box that reduces odor and makes maintenance a breeze."
+  },
+  {
+    "product_id": 1376,
+    "product_name": " Tekno the Robotic Puppy",
+    "price": 1999,
+    "category": "Pet products",
+    "made_in": "China",
+    "prop": "Interactive robotic pet that responds to voice commands and performs tricks"
+  },
+  
+  
   
   
   
