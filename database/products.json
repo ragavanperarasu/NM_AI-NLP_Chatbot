@@ -2880,6 +2880,63 @@
     "made_in": "India",
     "prop": "high accuracy, high precision"
   },
+  {
+    "product_id": 1331,
+    "product_name": "Hoodie Menswear",
+    "price": 599,
+    "category": "Fashion and Apparel",
+    "made_in": "India",
+    "prop": "Cozy,Cool and Casual"
+  },
+   {
+    "product_id": 1332,
+    "product_name": "Hoodie for women",
+    "price": 599,
+    "category": "Fashion and Apparel",
+    "made_in": "India",
+    "prop": "elegant and comfort"
+  },
+  {
+    "product_id": 1333,
+    "product_name": "Sweatshirt Unisex",
+    "price": 599,
+    "category": "Fashion and Apparel",
+    "made_in": "India",
+    "prop": "Sweatshirts you never wanna takeoff!!"
+  },
+   {
+    "product_id": 1334,
+    "product_name": "jacket/Coat",
+    "price": 999,
+    "category": "Fashion and Apparel",
+    "made_in": "India",
+    "prop": "Perfect fit for any Look"
+  },
+  {
+    "product_id": 1335,
+    "product_name": "Straight cut Jean",
+    "price": 2999,
+    "category": "Fashion and Apparel",
+    "made_in": "India",
+    "prop": "Denim at its top comfort"
+  },
+  {
+    "product_id": 1336,
+    "product_name": "Sportsweaar",
+    "price": 3999,
+    "category": "Fashion and Apparel",
+    "made_in": "India",
+    "prop": "Activewear that moves with you!!"
+  },
+  {
+    "product_id": 1337,
+    "product_name": "T-Shirts",
+    "price": 699,
+    "category": "Fashion and Apparel",
+    "made_in": "India",
+    "prop": "Classic Tee for every occasion"
+  },
+  
 
 ]
 
