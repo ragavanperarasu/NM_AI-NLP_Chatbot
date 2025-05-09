@@ -3040,6 +3040,58 @@
     "made_in": "USA",
     "prop": "Bring stories to life with lovable dolls!!"
   },
+   {
+    "product_id": 1351,
+    "product_name": "Spiral Notebooks",
+    "price": 99,
+    "category": "Notebooks and Journals",
+    "made_in": "India",
+    "prop": "For everyday note takers!"
+  },
+  {
+    "product_id": 1352,
+    "product_name": "Leather journal Notebooks",
+    "price": 290,
+    "category": "Notebooks and Journals",
+    "made_in": "India",
+    "prop": "Elegant finishing notebook!"
+  },
+  {
+    "product_id": 1353,
+    "product_name": "Hardcover Notebooks",
+    "price": 69,
+    "category": "Notebooks and Journals",
+    "made_in": "India",
+    "prop": "Stylish pages for your notes and doodles!"
+  },
+  {
+    "product_id": 1354,
+    "product_name": "Gel pens",
+    "price": 30,
+    "category": "Pens and markers",
+    "made_in": "India",
+    "prop": "Smooth writing with vibrant ink!"
+  },
+  {
+    "product_id": 1355,
+    "product_name": "Fine line Marker",
+    "price": 70,
+    "category": "Pens and markers",
+    "made_in": "USA",
+    "prop": "Perfect for detailed lovers"
+  },
+  {
+    "product_id": 1356,
+    "product_name": "Ball point pen",
+    "price": 10,
+    "category": "Pens and markers",
+    "made_in": "India",
+    "prop": "Reliable classics for everyday writing"
+  },
+  
+  
+  
+  
   
   
   
