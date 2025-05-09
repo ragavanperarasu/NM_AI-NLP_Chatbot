@@ -3160,6 +3160,46 @@
     "made_in": "Cambodia",
     "prop": "Perfect sheets for pencil,ink"
   },
+  {
+    "product_id": 1366,
+    "product_name": "Colour pencils set of 12",
+    "price": 199,
+    "category": "Art supplies",
+    "made_in": "Brazil",
+    "prop": "Rich,Blendable colours"
+  },
+  {
+    "product_id": 1367,
+    "product_name": "Dual tip markers",
+    "price": 299,
+    "category": "Art supplies",
+    "made_in": "Brazil",
+    "prop": "Two tips,double the fun for colouring and calligraphy"
+  },
+  {
+    "product_id": 1368,
+    "product_name": "Calligraphy pen set",
+    "price": 430,
+    "category": "Art supplies",
+    "made_in": "USA",
+    "prop": "Smooth calligraphy"
+  },
+  {
+    "product_id": 1369,
+    "product_name": "Crayon set",
+    "price": 249,
+    "category": "Art supplies",
+    "made_in": "India",
+    "prop": "Classic coloring for creativity"
+  },
+  {
+    "product_id": 1370,
+    "product_name": "Permanent Marker",
+    "price": 149,
+    "category": "Art supplies",
+    "made_in": "China",
+    "prop": "Permanent marker for multiuse"
+  },
   
   
   
