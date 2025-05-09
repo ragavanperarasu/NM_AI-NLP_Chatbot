@@ -2988,7 +2988,7 @@
     "product_id": 1344,
     "product_name": "Toddler dresses and pants",
     "price": 699,
-    "category": "Toddler clothing",
+    "category": "Baby&Kids",
     "made_in": "USA",
     "prop": "Adorable and durable outfits"
   },
@@ -2996,18 +2996,54 @@
     "product_id": 1345,
     "product_name": "Kids School uniforms",
     "price": 1999,
-    "category": "Toddler clothing",
+    "category": "Baby&Kids",
     "made_in": "India",
     "prop": "Neat,comfy uniforms!!"
   },
   {
     "product_id": 1346,
-    "product_name": "",
-    "price": 699,
-    "category": "Health and Fitness",
+    "product_name": "Educational toys",
+    "price": 399,
+    "category": "Baby&Kids",
     "made_in": "USA",
-    "prop": "Soft,Non slip mats for Comfy Yoga!!"
+    "prop": "Fun meets Learning!!"
   },
+  {
+    "product_id": 1347,
+    "product_name": "Building Blocks",
+    "price": 199,
+    "category": "Baby&Kids",
+    "made_in": "India",
+    "prop": "Stack,Build and Create!!"
+  },
+  {
+    "product_id": 1348,
+    "product_name": "Outdoor toys set combo",
+    "price": 599,
+    "category": "Baby&Kids",
+    "made_in": "USA",
+    "prop": "Adventure-ready toys for active play!!"
+  },
+  {
+    "product_id": 1349,
+    "product_name": "Scooter",
+    "price": 499,
+    "category": "Baby&Kids",
+    "made_in": "USA",
+    "prop": "Active play with Zooming scooters!!"
+  },
+  {
+    "product_id": 1350,
+    "product_name": "Figurine dolls",
+    "price": 399,
+    "category": "Baby&Kids",
+    "made_in": "USA",
+    "prop": "Bring stories to life with lovable dolls!!"
+  },
+  
+  
+  
+  
   
   
   
