@@ -3360,7 +3360,87 @@
     "made_in": "India",
     "prop": "Slurp and Sip delight"
   },
-  
+  {
+    "product_id": 1391,
+    "product_name":"Chickpeas",
+    "price": 79,
+    "category": "Canned & Jarred Goods",
+    "made_in": "USA",
+    "prop": "Great for hummus or salads"
+  },
+  {
+    "product_id": 1392,
+    "product_name":"Tomato Sauce",
+    "price": 99,
+    "category": "Canned & Jarred Goods",
+    "made_in": "India",
+    "prop": "Base for pasta and stews."
+  },
+  {
+    "product_id": 1393,
+    "product_name":"Peanut Butter",
+    "price": 399,
+    "category": "Canned & Jarred Goods",
+    "made_in": "India",
+    "prop": "Creamy or crunchy, spreads easily.."
+  },
+  {
+    "product_id": 1394,
+    "product_name":"Pickles",
+    "price": 99,
+    "category": "Canned & Jarred Goods",
+    "made_in": "USA",
+    "prop": "Tangy snack or sandwich addition."
+  },
+  {
+    "product_id": 1395,
+    "product_name":"Smart Wallet",
+    "price": 299,
+    "category": "Accessories",
+    "made_in": "Brazil",
+    "prop": "Slim and trackable"
+  },
+  {
+    "product_id": 1396,
+    "product_name":"Magnetic cable organizer",
+    "price": 299,
+    "category": "Accessories",
+    "made_in": "USA",
+    "prop": "No more tangled wires in your bag!!"
+  },
+
+  {
+    "product_id": 1397,
+    "product_name":"UV protection Sunglasses",
+    "price": 499,
+    "category": "Accessories",
+    "made_in": "China",
+    "prop": "stylish,compact and protective"
+  },
+  {
+    "product_id": 1398,
+    "product_name":"Portable perfume atomizer",
+    "price": 299,
+    "category": "Accessories",
+    "made_in": "Brazil",
+    "prop": "Travel sized fragrance sprayer"
+  },
+  {
+    "product_id": 1399,
+    "product_name":"TouchScreen gloves",
+    "price": 599,
+    "category": "Accessories",
+    "made_in": "India",
+    "prop": "Winter friendly tech gloves"
+  },
+  {
+    "product_id": 1400,
+    "product_name":"Diva Fashion Women Necklace",
+    "price": 449,
+    "category": "Accessories",
+    "made_in": "China",
+    "prop": "Simple and elegant Necklaces!!"
+  },
   
   
   
