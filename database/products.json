@@ -2978,12 +2978,37 @@
   },
   {
     "product_id": 1343,
-    "product_name": "Yoga mats",
+    "product_name": "Baby Onesies",
+    "price": 999,
+    "category": "Baby Care",
+    "made_in": "India",
+    "prop": "Soft,snap-on outfits!!"
+  },
+  {
+    "product_id": 1344,
+    "product_name": "Toddler dresses and pants",
+    "price": 699,
+    "category": "Toddler clothing",
+    "made_in": "USA",
+    "prop": "Adorable and durable outfits"
+  },
+  {
+    "product_id": 1345,
+    "product_name": "Kids School uniforms",
+    "price": 1999,
+    "category": "Toddler clothing",
+    "made_in": "India",
+    "prop": "Neat,comfy uniforms!!"
+  },
+  {
+    "product_id": 1346,
+    "product_name": "",
     "price": 699,
     "category": "Health and Fitness",
     "made_in": "USA",
     "prop": "Soft,Non slip mats for Comfy Yoga!!"
   },
+  
   
   
   
